@@ -129,15 +129,19 @@ type ItemInfo = {
   };
 };
 
+export type Items = ItemInfo[];
+
+export type ItemListResponseResultField = Readonly<{
+  status: number; // ステータスコード
+  result_count: number; // 取得件数
+  total_count: number; // 全体件数
+  first_position: number; // 検索開始位置
+  items: Items;
+}>;
+
 export type ItemListResponse = Readonly<{
   request: {
     parameters: {};
   };
-  result: {
-    status: number; // ステータスコード
-    result_count: number; // 取得件数
-    total_count: number; // 全体件数
-    first_position: number; // 検索開始位置
-    items: ItemInfo[];
-  };
+  result: ItemListResponseResultField;
 }>;
