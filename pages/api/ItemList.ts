@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 import { ItemListRequestParameters, ItemListResponse } from '../../types/api';
 
 const params: ItemListRequestParameters = {
@@ -23,10 +23,18 @@ const client = axios.create({
 });
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  if (req.method !== 'GET') {
+    res.setHeader('Allow', ['GET']);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
+
   try {
     const response = await client.get<ItemListResponse>('/ItemList');
     res.json(response.data.result);
   } catch (error) {
-    console.error(error);
+    if ((error as AxiosError).isAxiosError) {
+      const { response }: AxiosError = error;
+      res.status(response.status).json({ error: response.statusText });
+    }
   }
 };
