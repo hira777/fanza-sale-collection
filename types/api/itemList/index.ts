@@ -26,7 +26,7 @@ type ItemListReuiredRequestParameters = {
   site: Site;
 };
 
-type ItemListOptionalRequestParameters = {
+export type ItemListOptionalRequestParameters = {
   // フロアAPIから取得できるサービスコードを指定
   service?: string;
   // フロアAPIから取得できるフロアコードを指定

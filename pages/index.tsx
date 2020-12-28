@@ -24,7 +24,9 @@ export default function Home({ items }: { items: ItemList }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await itemListService.get();
+  const { data } = await itemListService.get({
+    keyword: '％OFF',
+  });
 
   return {
     props: {

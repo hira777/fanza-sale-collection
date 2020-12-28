@@ -29,7 +29,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   try {
-    const response = await client.get<ItemListResponse>('/ItemList');
+    const response = await client.get<ItemListResponse>('/ItemList', {
+      params: { ...client.defaults.params, ...req.query },
+    });
     res.json(response.data.result);
   } catch (error) {
     if ((error as AxiosError).isAxiosError) {
