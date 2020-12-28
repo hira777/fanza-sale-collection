@@ -1,10 +1,38 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import { useState, useMemo, ChangeEvent } from 'react';
+import { useDebounce } from 'react-use';
 import { itemListService } from '../services/itemList';
 import { Items as ItemList } from '../types/api/';
 import styles from '../styles/Home.module.css';
 
-export default function Home({ items }: { items: ItemList }) {
+export default function Home({ initialItems }: { initialItems: ItemList }) {
+  const [items, setItems] = useState(initialItems);
+  const [inputValue, setInputValue] = useState('');
+  const onChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    setInputValue(event.target.value);
+  };
+  const itemList = useMemo(
+    () =>
+      items.map(({ product_id, title }) => <li key={product_id}>{title}</li>),
+    [items]
+  );
+
+  useDebounce(
+    () => {
+      const fetchData = async () => {
+        const { data } = await itemListService.get({
+          keyword: `％OFF ${inputValue}`,
+        });
+        setItems(data.items);
+      };
+
+      fetchData();
+    },
+    500,
+    [inputValue]
+  );
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,11 +41,14 @@ export default function Home({ items }: { items: ItemList }) {
       </Head>
 
       <main>
-        <ul>
-          {items.map(({ product_id, title }) => (
-            <li key={product_id}>{title}</li>
-          ))}
-        </ul>
+        <input
+          type="text"
+          aria-label="keyword"
+          placeholder="キーワードから探す"
+          value={inputValue}
+          onChange={onChange}
+        />
+        <ul>{itemList}</ul>
       </main>
     </div>
   );
@@ -30,7 +61,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      items: data.items,
+      initialItems: data.items,
     },
   };
 };
