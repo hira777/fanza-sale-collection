@@ -60,7 +60,7 @@ export type ItemListOptionalRequestParameters = {
 export type ItemListRequestParameters = ItemListReuiredRequestParameters &
   ItemListOptionalRequestParameters;
 
-type ItemInfo = {
+export type ItemInfo = {
   service_code: string;
   service_name: string;
   floor_code: string;
@@ -127,6 +127,13 @@ type ItemInfo = {
       name: string;
     }[];
   };
+  campaign?: [
+    {
+      date_begin: string;
+      date_end: string;
+      title: string;
+    }
+  ];
 };
 
 export type Items = ItemInfo[];
