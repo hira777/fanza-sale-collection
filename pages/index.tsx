@@ -2,12 +2,14 @@ import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { useState, useMemo, useEffect, ChangeEvent } from 'react';
 import { useDebounce } from 'react-use';
+import Container from '@material-ui/core/Container';
 import { itemListService } from '../services/itemList';
-import { Items as ItemList } from '../types/api/';
-import styles from '../styles/Home.module.css';
+import { Items } from '../types/api/';
+import { ItemList } from '../components/ItemList';
+import { ItemListItem } from '../components/ItemListItem';
 import { CATEGORIES_OF_SEARCH as CATEGORIES } from '../constants/categoriesOfSearch';
 
-export default function Home({ initialItems }: { initialItems: ItemList }) {
+export default function Home({ initialItems }: { initialItems: Items }) {
   const [items, setItems] = useState(initialItems);
   const [inputValue, setInputValue] = useState('');
   const [category, setCategory] = useState(CATEGORIES.ALL);
@@ -35,8 +37,13 @@ export default function Home({ initialItems }: { initialItems: ItemList }) {
     );
   }, [categories]);
   const itemList = useMemo(
-    () =>
-      items.map(({ product_id, title }) => <li key={product_id}>{title}</li>),
+    () => (
+      <ItemList>
+        {items.map(item => (
+          <ItemListItem key={item.product_id} item={item} />
+        ))}
+      </ItemList>
+    ),
     [items]
   );
 
@@ -67,7 +74,7 @@ export default function Home({ initialItems }: { initialItems: ItemList }) {
   }, [category]);
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Fanza Sale Collection</title>
         <link rel="icon" href="/favicon.ico" />
@@ -82,7 +89,9 @@ export default function Home({ initialItems }: { initialItems: ItemList }) {
           value={inputValue}
           onChange={onChange}
         />
-        <ul>{itemList}</ul>
+        <Container fixed maxWidth="md">
+          {itemList}
+        </Container>
       </main>
     </div>
   );
