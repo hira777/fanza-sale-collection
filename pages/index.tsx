@@ -17,26 +17,9 @@ export default function Home({ initialItems }: { initialItems: Items }) {
   const onChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
-  const onChangeSelect = (event: ChangeEvent<HTMLSelectElement>) => {
-    setCategory(event.target.value);
+  const onChangeCategory = (event: ChangeEvent<HTMLSelectElement>) => {
+    setCategory(event.target.getAttribute('data-category'));
   };
-  const categories = [{ value: CATEGORIES.ALL, text: 'すべて' }].concat(
-    process.env.NEXT_PUBLIC_SALE_CATEGORIES.split(',').map(category => ({
-      value: category,
-      text: category,
-    }))
-  );
-  const select = useMemo(() => {
-    return (
-      <select onChange={onChangeSelect} defaultValue={category}>
-        {categories.map(({ value, text }) => (
-          <option key={value} value={value}>
-            {text}
-          </option>
-        ))}
-      </select>
-    );
-  }, [categories]);
   const itemList = useMemo(
     () => (
       <ItemList>
@@ -81,9 +64,13 @@ export default function Home({ initialItems }: { initialItems: Items }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header inputValue={inputValue} onChangeInput={onChange} />
-      <main>
-        {select}
+      <Header
+        inputValue={inputValue}
+        onChangeInput={onChange}
+        category={category}
+        onChangeCategory={onChangeCategory}
+      />
+      <main style={{ marginTop: 30 }}>
         <Container fixed maxWidth="md">
           {itemList}
         </Container>

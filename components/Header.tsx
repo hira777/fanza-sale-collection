@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   fade,
   createStyles,
@@ -10,6 +11,12 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
+import Tooltip from '@material-ui/core/Tooltip';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { CATEGORIES_LABEL } from '../constants/categoriesOfSearch';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -30,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) =>
       '&:hover': {
         backgroundColor: fade(theme.palette.common.white, 0.25),
       },
-      // marginRight: theme.spacing(2),
+      marginRight: theme.spacing(2),
       marginLeft: 0,
       width: '100%',
       [theme.breakpoints.up('sm')]: {
@@ -60,11 +67,41 @@ const useStyles = makeStyles((theme: Theme) =>
         width: '20ch',
       },
     },
+    category: {
+      margin: theme.spacing(0, 0.5, 0, 1),
+      display: 'none',
+      [theme.breakpoints.up('md')]: {
+        display: 'block',
+      },
+    },
+    categoryItem: {
+      width: '100%',
+    },
+    formControl: {
+      minWidth: 120,
+      color: theme.palette.common.white,
+    },
   })
 );
 
-export function Header({ inputValue, onChangeInput }) {
+export function Header({
+  inputValue,
+  onChangeInput,
+  category,
+  onChangeCategory,
+}) {
   const classes = useStyles();
+  const [categoryMenu, setCategoryMenu] = useState(null);
+  const onClickCategory = event => {
+    setCategoryMenu(event.currentTarget);
+  };
+  const onCloseCategoryMenu = event => {
+    if (event.currentTarget.nodeName === 'BUTTON') {
+      onChangeCategory(event);
+    }
+
+    setCategoryMenu(null);
+  };
 
   return (
     <AppBar position="static">
@@ -73,6 +110,41 @@ export function Header({ inputValue, onChangeInput }) {
           <Typography variant="h6" className={classes.title}>
             FANZA Sale Collection
           </Typography>
+          <Tooltip title="カテゴリ" enterDelay={300}>
+            <Button
+              color="inherit"
+              aria-owns={categoryMenu ? 'category-menu' : undefined}
+              aria-haspopup="true"
+              onClick={onClickCategory}
+            >
+              <span className={classes.category}>
+                {
+                  CATEGORIES_LABEL.filter(({ value }) => value === category)[0]
+                    .text
+                }
+              </span>
+              <ExpandMoreIcon fontSize="small" />
+            </Button>
+          </Tooltip>
+          <Menu
+            id="category-menu"
+            anchorEl={categoryMenu}
+            open={Boolean(categoryMenu)}
+            onClose={onCloseCategoryMenu}
+          >
+            {CATEGORIES_LABEL.map(({ value, text }) => (
+              <MenuItem
+                component="button"
+                key={value}
+                selected={category === value}
+                onClick={onCloseCategoryMenu}
+                data-category={value}
+                className={classes.categoryItem}
+              >
+                {text}
+              </MenuItem>
+            ))}
+          </Menu>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
