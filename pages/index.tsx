@@ -5,6 +5,7 @@ import { useDebounce } from 'react-use';
 import Container from '@material-ui/core/Container';
 import { itemListService } from '../services/itemList';
 import { Items } from '../types/api/';
+import { Header } from '../components/Header';
 import { ItemList } from '../components/ItemList';
 import { ItemListItem } from '../components/ItemListItem';
 import { CATEGORIES_OF_SEARCH as CATEGORIES } from '../constants/categoriesOfSearch';
@@ -80,15 +81,9 @@ export default function Home({ initialItems }: { initialItems: Items }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header inputValue={inputValue} onChangeInput={onChange} />
       <main>
         {select}
-        <input
-          type="text"
-          aria-label="keyword"
-          placeholder="キーワードから探す"
-          value={inputValue}
-          onChange={onChange}
-        />
         <Container fixed maxWidth="md">
           {itemList}
         </Container>
