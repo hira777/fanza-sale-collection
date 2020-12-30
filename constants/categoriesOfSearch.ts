@@ -1,4 +1,4 @@
-const ALL = '％OFF';
+const ALL = '0％OFF';
 
 export const CATEGORIES_OF_SEARCH = {
   ALL,
