@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ChangeEvent, MouseEvent } from 'react';
 import {
   fade,
   createStyles,
@@ -84,12 +84,19 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+type HeaderProps = {
+  inputValue: string;
+  onChangeInput: (e: ChangeEvent<HTMLInputElement>) => void;
+  category: string;
+  onChangeCategory: (e: MouseEvent<HTMLButtonElement>) => void;
+};
+
 export function Header({
   inputValue,
   onChangeInput,
   category,
   onChangeCategory,
-}) {
+}: HeaderProps) {
   const classes = useStyles();
   const [categoryMenu, setCategoryMenu] = useState(null);
   const onClickCategory = event => {

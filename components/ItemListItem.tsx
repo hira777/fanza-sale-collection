@@ -37,7 +37,11 @@ const useStyles = makeStyles({
   },
 });
 
-export function ItemListItem({ item }: { item: ItemInfo }) {
+type ItemListItemProps = {
+  item: ItemInfo;
+};
+
+export function ItemListItem({ item }: ItemListItemProps) {
   const { title } = item;
   const classes = useStyles();
 

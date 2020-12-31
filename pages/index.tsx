@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import { useState, useMemo, useEffect, ChangeEvent } from 'react';
+import { useState, useMemo, useEffect, ChangeEvent, MouseEvent } from 'react';
 import { useDebounce } from 'react-use';
 import Container from '@material-ui/core/Container';
 import { itemListService } from '../services/itemList';
@@ -17,8 +17,8 @@ export default function Home({ initialItems }: { initialItems: Items }) {
   const onChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
-  const onChangeCategory = (event: ChangeEvent<HTMLSelectElement>) => {
-    setCategory(event.target.getAttribute('data-category'));
+  const onChangeCategory = (event: MouseEvent<HTMLButtonElement>) => {
+    setCategory(event.currentTarget.getAttribute('data-category'));
   };
   const itemList = useMemo(
     () => (
