@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -34,16 +35,26 @@ const useStyles = makeStyles({
     '-webkit-box-orient': 'vertical',
     '-webkit-line-clamp': 2,
     lineHeight: 1.4,
+    height: '2.7em',
   },
 });
+
+function formatWithComma(number: number): string {
+  return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+}
+
+function formatPrice(price: ItemInfo['prices']['price']) {
+  const newPrice = parseInt(price.replace('~', ''), 0);
+  return `${formatWithComma(newPrice)}円~`;
+}
 
 type ItemListItemProps = {
   item: ItemInfo;
 };
 
 export function ItemListItem({ item }: ItemListItemProps) {
-  const { title } = item;
   const classes = useStyles();
+  const price = formatPrice(item.prices.price);
 
   return (
     <Grid item className={classes.gridItem}>
@@ -64,7 +75,7 @@ export function ItemListItem({ item }: ItemListItemProps) {
             <CardMedia
               className={classes.cardMedia}
               image={item.imageURL.small}
-              title={title}
+              title={item.title}
             />
             <CardContent className={classes.cardContent}>
               <Typography
@@ -73,7 +84,12 @@ export function ItemListItem({ item }: ItemListItemProps) {
                 component="h2"
                 className={classes.cardTitle}
               >
-                {title}
+                {item.title}
+              </Typography>
+              <Typography variant="caption" color="secondary" component="p">
+                <Box component="span" fontWeight="bold">
+                  {price}
+                </Box>
               </Typography>
             </CardContent>
           </Link>
