@@ -8,12 +8,12 @@ import { Items } from '../types/api/';
 import { Header } from '../components/Header';
 import { ItemList } from '../components/ItemList';
 import { ItemListItem } from '../components/ItemListItem';
-import { CATEGORIES_OF_SEARCH as CATEGORIES } from '../constants/categoriesOfSearch';
+import { CATEGORIES } from '../constants/categoriesOfSearch';
 
 export default function Home({ initialItems }: { initialItems: Items }) {
   const [items, setItems] = useState(initialItems);
   const [inputValue, setInputValue] = useState('');
-  const [category, setCategory] = useState(CATEGORIES.ALL);
+  const [category, setCategory] = useState(CATEGORIES[0]);
   const onChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
@@ -81,7 +81,7 @@ export default function Home({ initialItems }: { initialItems: Items }) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await itemListService.get({
-    keyword: CATEGORIES.ALL,
+    keyword: CATEGORIES[0],
   });
 
   return {
