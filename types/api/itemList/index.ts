@@ -127,6 +127,13 @@ export type ItemInfo = {
       name: string;
     }[];
   };
+  campaign?: [
+    {
+      date_begin: string;
+      date_end: string;
+      title: string;
+    }
+  ];
 };
 
 export type Items = ItemInfo[];
