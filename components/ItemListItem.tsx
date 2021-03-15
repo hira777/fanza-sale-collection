@@ -48,7 +48,7 @@ function formatPrice(price: ItemInfo['prices']['price']) {
   return `${formatWithComma(newPrice)}円~`;
 }
 
-type ItemListItemProps = {
+export type ItemListItemProps = {
   item: ItemInfo;
 };
 
