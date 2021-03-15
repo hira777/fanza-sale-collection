@@ -15,6 +15,7 @@ type DeliveryType = 'hd' | 'download' | 'stream' | 'androiddl' | 'iosdl';
 type Delivery = {
   type: DeliveryType;
   price: string;
+  list_price: string;
 };
 
 type ItemListReuiredRequestParameters = {
@@ -83,7 +84,7 @@ export type ItemInfo = {
     small: string;
     large: string;
   };
-  sampleImageURL: {
+  sampleImageURL?: {
     sample_s: {
       image: string[];
     };
@@ -98,6 +99,7 @@ export type ItemInfo = {
   };
   prices: {
     price: string;
+    list_price: string;
     deliveries: {
       delivery: Delivery[];
     };
@@ -108,16 +110,20 @@ export type ItemInfo = {
       id: number;
       name: string;
     }[];
+    series?: {
+      id: number;
+      name: string;
+    }[];
     maker: {
       id: number;
       name: string;
     }[];
-    actress: {
+    actress?: {
       id: number;
       name: string;
       ruby: string;
     }[];
-    director: {
+    director?: {
       id: number;
       name: string;
       ruby: string;
