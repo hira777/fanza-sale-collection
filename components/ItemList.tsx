@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import Grid from '@material-ui/core/Grid';
 
-type ItemListProps = {
+export type ItemListProps = {
   children: ReactNode;
 };
 
