@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
 import { getItems } from '../mock/items';
-import { getCategories } from '../mock/ctagories';
+import { getCategories } from '../mock/categories';
 import { itemListService } from '../services/itemList';
 import useItems from './useItems';
 
