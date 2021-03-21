@@ -1,11 +1,14 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import { useState, useMemo, useEffect, ChangeEvent, MouseEvent } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useDebounce } from 'react-use';
 import Container from '@material-ui/core/Container';
 import { itemListService } from '../services/itemList';
 import { Items } from '../types/api/';
 import { Header } from '../components/Header';
+import { HeaderInput } from '../components/HeaderInput';
+import { HeaderMenu } from '../components/HeaderMenu';
+import { HeaderTitle } from '../components/HeaderTitle';
 import { ItemList } from '../components/ItemList';
 import { ItemListItem } from '../components/ItemListItem';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
@@ -14,11 +17,11 @@ export default function Home({ initialItems }: { initialItems: Items }) {
   const [items, setItems] = useState(initialItems);
   const [inputValue, setInputValue] = useState('');
   const [category, setCategory] = useState(CATEGORIES[0]);
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
+  const onChangeInput = (value: string) => {
+    setInputValue(value);
   };
-  const onChangeCategory = (event: MouseEvent<HTMLButtonElement>) => {
-    setCategory(event.currentTarget.getAttribute('data-category'));
+  const onChangeCategory = (selectedCategory: string) => {
+    setCategory(selectedCategory);
   };
   const itemList = useMemo(
     () => (
@@ -65,10 +68,14 @@ export default function Home({ initialItems }: { initialItems: Items }) {
       </Head>
 
       <Header
-        inputValue={inputValue}
-        onChangeInput={onChange}
-        category={category}
-        onChangeCategory={onChangeCategory}
+        title={<HeaderTitle />}
+        menu={
+          <HeaderMenu
+            categories={CATEGORIES}
+            onChangeCategory={onChangeCategory}
+          />
+        }
+        input={<HeaderInput onChangeInput={onChangeInput} />}
       />
       <main style={{ marginTop: 30 }}>
         <Container fixed maxWidth="md">
