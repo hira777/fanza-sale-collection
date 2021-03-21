@@ -1,0 +1,1723 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Header Default 1`] = `
+<header
+  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+>
+  <div
+    className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-1 MuiToolbar-gutters"
+    >
+      <h1
+        className="MuiTypography-root makeStyles-title-2 MuiTypography-h6"
+      >
+        FANZA Sale Collection
+      </h1>
+      <button
+        aria-describedby={null}
+        aria-haspopup="true"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="カテゴリ"
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="makeStyles-category-3"
+          >
+            春のパンツまつり30％OFF第2弾
+          </span>
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <div
+        className="makeStyles-search-5"
+      >
+        <div
+          className="makeStyles-searchIcon-6"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+        </div>
+        <div
+          className="MuiInputBase-root makeStyles-inputRoot-7"
+          onClick={[Function]}
+        >
+          <input
+            aria-label="keyword search"
+            className="MuiInputBase-input makeStyles-inputInput-8"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="キーワードから探す"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots HeaderInput Default 1`] = `
+<div
+  className="makeStyles-search-9"
+>
+  <div
+    className="makeStyles-searchIcon-10"
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+      />
+    </svg>
+  </div>
+  <div
+    className="MuiInputBase-root makeStyles-inputRoot-11"
+    onClick={[Function]}
+  >
+    <input
+      aria-label="keyword search"
+      className="MuiInputBase-input makeStyles-inputInput-12"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="キーワードから探す"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots HeaderMenu Default 1`] = `
+<button
+  aria-describedby={null}
+  aria-haspopup="true"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  title="カテゴリ"
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    <span
+      className="makeStyles-category-13"
+    >
+      春のパンツまつり30％OFF第2弾
+    </span>
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+      />
+    </svg>
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`Storyshots HeaderTitle Default 1`] = `
+<h1
+  className="MuiTypography-root makeStyles-title-15 MuiTypography-h6"
+>
+  FANZA Sale Collection
+</h1>
+`;
+
+exports[`Storyshots ItemList Default 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container"
+  >
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mimk00078/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-21"
+                >
+                  350円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=118ppt00092/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-22"
+                >
+                  500円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ebod00806/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-23"
+                >
+                  1,980円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=13dsvr00942/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-24"
+                >
+                  980円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ipx00628/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="中出しSEX解禁 桜空もも"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                中出しSEX解禁 桜空もも
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-25"
+                >
+                  1,980円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=idbd00754/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="希志あいのCOMPLETEBOX48時間"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                希志あいのCOMPLETEBOX48時間
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-26"
+                >
+                  300円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=bf00610/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-27"
+                >
+                  350円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mide00900/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-28"
+                >
+                  1,980円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ofje00236/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-29"
+                >
+                  300円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+            href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mide00897/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                }
+              }
+              title="家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ"
+            />
+            <div
+              className="MuiCardContent-root makeStyles-cardContent-19"
+            >
+              <h2
+                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+              >
+                家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ
+              </h2>
+              <p
+                className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+              >
+                <span
+                  className="MuiBox-root MuiBox-root-30"
+                >
+                  1,980円~
+                </span>
+              </p>
+            </div>
+          </a>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ItemListItem Default 1`] = `
+<div
+  className="MuiGrid-root makeStyles-gridItem-31 MuiGrid-item"
+>
+  <div
+    className="MuiPaper-root MuiCard-root makeStyles-CardRoot-32 MuiPaper-outlined"
+  >
+    <button
+      className="MuiButtonBase-root MuiCardActionArea-root"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+        href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mimk00078/"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="MuiCardMedia-root makeStyles-cardMedia-33"
+          style={
+            Object {
+              "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+            }
+          }
+          title="1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！"
+        />
+        <div
+          className="MuiCardContent-root makeStyles-cardContent-34"
+        >
+          <h2
+            className="MuiTypography-root makeStyles-cardTitle-35 MuiTypography-caption MuiTypography-gutterBottom"
+          >
+            1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！
+          </h2>
+          <p
+            className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+          >
+            <span
+              className="MuiBox-root MuiBox-root-36"
+            >
+              350円~
+            </span>
+          </p>
+        </div>
+      </a>
+      <span
+        className="MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Top Default 1`] = `
+Array [
+  <header
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+  >
+    <div
+      className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
+    >
+      <div
+        className="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-37 MuiToolbar-gutters"
+      >
+        <h1
+          className="MuiTypography-root makeStyles-title-38 MuiTypography-h6"
+        >
+          FANZA Sale Collection
+        </h1>
+        <button
+          aria-describedby={null}
+          aria-haspopup="true"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="カテゴリ"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="makeStyles-category-39"
+            >
+              春のパンツまつり30％OFF第2弾
+            </span>
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          className="makeStyles-search-41"
+        >
+          <div
+            className="makeStyles-searchIcon-42"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
+          <div
+            className="MuiInputBase-root makeStyles-inputRoot-43"
+            onClick={[Function]}
+          >
+            <input
+              aria-label="keyword search"
+              className="MuiInputBase-input makeStyles-inputInput-44"
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="キーワードから探す"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>,
+  <main
+    style={
+      Object {
+        "marginTop": 30,
+      }
+    }
+  >
+    <div
+      className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mimk00078/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-50"
+                      >
+                        350円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=118ppt00092/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-51"
+                      >
+                        500円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ebod00806/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-52"
+                      >
+                        1,980円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=13dsvr00942/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-53"
+                      >
+                        980円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ipx00628/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="中出しSEX解禁 桜空もも"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      中出しSEX解禁 桜空もも
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-54"
+                      >
+                        1,980円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=idbd00754/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="希志あいのCOMPLETEBOX48時間"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      希志あいのCOMPLETEBOX48時間
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-55"
+                      >
+                        300円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=bf00610/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-56"
+                      >
+                        350円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mide00900/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-57"
+                      >
+                        1,980円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ofje00236/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-58"
+                      >
+                        300円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+            >
+              <button
+                className="MuiButtonBase-root MuiCardActionArea-root"
+                disabled={false}
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <a
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
+                  href="https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=mide00897/"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    className="MuiCardMedia-root makeStyles-cardMedia-47"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://placehold.it/147x200\\")",
+                      }
+                    }
+                    title="家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ"
+                  />
+                  <div
+                    className="MuiCardContent-root makeStyles-cardContent-48"
+                  >
+                    <h2
+                      className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                    >
+                      家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ
+                    </h2>
+                    <p
+                      className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
+                    >
+                      <span
+                        className="MuiBox-root MuiBox-root-59"
+                      >
+                        1,980円~
+                      </span>
+                    </p>
+                  </div>
+                </a>
+                <span
+                  className="MuiCardActionArea-focusHighlight"
+                />
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>,
+]
+`;

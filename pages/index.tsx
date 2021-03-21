@@ -1,35 +1,22 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import { useState, useMemo, useEffect, ChangeEvent, MouseEvent } from 'react';
+import { useState, useEffect } from 'react';
 import { useDebounce } from 'react-use';
-import Container from '@material-ui/core/Container';
 import { itemListService } from '../services/itemList';
 import { Items } from '../types/api/';
-import { Header } from '../components/Header';
-import { ItemList } from '../components/ItemList';
-import { ItemListItem } from '../components/ItemListItem';
+import { Top } from '../screens/Top';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
 
 export default function Home({ initialItems }: { initialItems: Items }) {
   const [items, setItems] = useState(initialItems);
   const [inputValue, setInputValue] = useState('');
   const [category, setCategory] = useState(CATEGORIES[0]);
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
+  const onChangeInput = (value: string) => {
+    setInputValue(value);
   };
-  const onChangeCategory = (event: MouseEvent<HTMLButtonElement>) => {
-    setCategory(event.currentTarget.getAttribute('data-category'));
+  const onChangeCategory = (selectedCategory: string) => {
+    setCategory(selectedCategory);
   };
-  const itemList = useMemo(
-    () => (
-      <ItemList>
-        {items.map(item => (
-          <ItemListItem key={item.product_id} item={item} />
-        ))}
-      </ItemList>
-    ),
-    [items]
-  );
 
   useDebounce(
     () => {
@@ -63,18 +50,12 @@ export default function Home({ initialItems }: { initialItems: Items }) {
         <title>Fanza Sale Collection</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header
-        inputValue={inputValue}
-        onChangeInput={onChange}
-        category={category}
+      <Top
+        items={items}
+        categories={CATEGORIES}
         onChangeCategory={onChangeCategory}
+        onChangeInput={onChangeInput}
       />
-      <main style={{ marginTop: 30 }}>
-        <Container fixed maxWidth="md">
-          {itemList}
-        </Container>
-      </main>
     </div>
   );
 }
