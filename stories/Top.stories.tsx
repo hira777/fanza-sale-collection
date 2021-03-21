@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 
 import { Top, TopProps } from '../screens/Top';
 import { getItems } from '../mock/items';
-import { getCategories } from '../mock/ctagories';
+import { getCategories } from '../mock/categories';
 
 export default {
   title: 'Top',
