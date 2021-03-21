@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useDebounce } from 'react-use';
 import { itemListService } from '../services/itemList';
 
 type UseItems = {
@@ -10,8 +11,7 @@ export default function useItems({ category: initialCategory }: UseItems) {
   const [category, setCategory] = useState(initialCategory);
   const [inputValue, setInputValue] = useState('');
   const keyword = useRef(`${category} ${inputValue}`);
-
-  useEffect(() => {
+  const search = () => {
     const newKeyword = `${category} ${inputValue}`;
 
     if (keyword.current === newKeyword) {
@@ -28,7 +28,10 @@ export default function useItems({ category: initialCategory }: UseItems) {
     };
 
     fetchData();
-  }, [category, inputValue]);
+  };
+
+  useDebounce(search, 500, [inputValue]);
+  useEffect(search, [category]);
 
   return { items, setCategory, setInputValue };
 }

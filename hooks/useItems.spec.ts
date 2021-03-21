@@ -60,7 +60,7 @@ describe('useItems', () => {
     expect(result.current.items).toEqual(items);
   });
 
-  test('入力値を変更すると、API にリクエストして商品リストを返す', async () => {
+  test('入力値を変更してから500ms後、API にリクエストして商品リストを返す', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
       useItems({ category: categories[0] })
     );
@@ -75,5 +75,15 @@ describe('useItems', () => {
       keyword: `${categories[0]} AAA`,
     });
     expect(result.current.items).toEqual(items);
+  });
+
+  test('入力値を変更してから500ms以内だと、まだ API にリクエストしていない', async () => {
+    const { result } = renderHook(() => useItems({ category: categories[0] }));
+
+    act(() => {
+      result.current.setInputValue('AAA');
+    });
+
+    expect(spyItemListService).toHaveBeenCalledTimes(0);
   });
 });
