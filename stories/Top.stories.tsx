@@ -17,6 +17,6 @@ const Template: Story<TopProps> = args => <Top {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  items: items.concat(items),
+  items: items,
   categories: categories,
 };

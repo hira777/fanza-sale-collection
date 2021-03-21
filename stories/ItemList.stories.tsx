@@ -17,12 +17,12 @@ type TemplateType = { items: ItemListItemProps['item'][] } & ItemListProps;
 const Template: Story<TemplateType> = ({ items, ...args }) => (
   <ItemList {...args}>
     {items.map(item => (
-      <ItemListItem item={item} />
+      <ItemListItem key={item.product_id} item={item} />
     ))}
   </ItemList>
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  items: items.concat(items),
+  items: items,
 };
