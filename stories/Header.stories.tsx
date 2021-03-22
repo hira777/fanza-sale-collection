@@ -9,7 +9,7 @@ import { HeaderTitle } from '../components/HeaderTitle';
 import * as HeaderMenuStories from './HeaderMenu.stories';
 
 export default {
-  title: 'Header',
+  title: 'Components/Header',
   component: Header,
 } as Meta;
 

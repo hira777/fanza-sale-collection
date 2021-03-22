@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { HeaderInput, HeaderInputProps } from '../components/HeaderInput';
 
 export default {
-  title: 'HeaderInput',
+  title: 'Components/HeaderInput',
   component: HeaderInput,
 } as Meta;
 

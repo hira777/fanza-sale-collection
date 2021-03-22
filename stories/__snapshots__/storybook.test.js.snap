@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Header Default 1`] = `
+exports[`Storyshots Components/Header Default 1`] = `
 <header
   className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
 >
@@ -99,7 +99,7 @@ exports[`Storyshots Header Default 1`] = `
 </header>
 `;
 
-exports[`Storyshots HeaderInput Default 1`] = `
+exports[`Storyshots Components/HeaderInput Default 1`] = `
 <div
   className="makeStyles-search-9"
 >
@@ -136,7 +136,7 @@ exports[`Storyshots HeaderInput Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots HeaderMenu Default 1`] = `
+exports[`Storyshots Components/HeaderMenu Default 1`] = `
 <button
   aria-describedby={null}
   aria-haspopup="true"
@@ -184,7 +184,7 @@ exports[`Storyshots HeaderMenu Default 1`] = `
 </button>
 `;
 
-exports[`Storyshots HeaderTitle Default 1`] = `
+exports[`Storyshots Components/HeaderTitle Default 1`] = `
 <h1
   className="MuiTypography-root makeStyles-title-15 MuiTypography-h6"
 >
@@ -192,7 +192,7 @@ exports[`Storyshots HeaderTitle Default 1`] = `
 </h1>
 `;
 
-exports[`Storyshots ItemList Default 1`] = `
+exports[`Storyshots Components/ItemList Default 1`] = `
 <div
   className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
 >
@@ -853,7 +853,7 @@ exports[`Storyshots ItemList Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots ItemListItem Default 1`] = `
+exports[`Storyshots Components/ItemListItem Default 1`] = `
 <div
   className="MuiGrid-root makeStyles-gridItem-31 MuiGrid-item"
 >
@@ -921,7 +921,7 @@ exports[`Storyshots ItemListItem Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots ResultStats Default 1`] = `
+exports[`Storyshots Components/ResultStats Default 1`] = `
 Array [
   <p
     className="MuiTypography-root MuiTypography-subtitle1"
@@ -943,7 +943,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Top Default 1`] = `
+exports[`Storyshots Screens/Top Default 1`] = `
 Array [
   <header
     className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"

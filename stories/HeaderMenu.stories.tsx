@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { HeaderMenu, HeaderMenuProps } from '../components/HeaderMenu';
 
 export default {
-  title: 'HeaderMenu',
+  title: 'Components/HeaderMenu',
   component: HeaderMenu,
 } as Meta;
 

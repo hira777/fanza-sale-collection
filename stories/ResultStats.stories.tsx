@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { ResultStats, ResultStatsProps } from '../components/ResultStats';
 
 export default {
-  title: 'ResultStats',
+  title: 'Components/ResultStats',
   component: ResultStats,
 } as Meta;
 

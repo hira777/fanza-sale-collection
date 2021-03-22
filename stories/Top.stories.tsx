@@ -7,7 +7,7 @@ import { getItems } from '../mock/items';
 import { getCategories } from '../mock/categories';
 
 export default {
-  title: 'Top',
+  title: 'Screens/Top',
   component: Top,
 } as Meta;
 

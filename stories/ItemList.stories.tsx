@@ -6,7 +6,7 @@ import { ItemListItem, ItemListItemProps } from '../components/ItemListItem';
 import { getItems } from '../mock/items';
 
 export default {
-  title: 'ItemList',
+  title: 'Components/ItemList',
   component: ItemList,
 } as Meta;
 
