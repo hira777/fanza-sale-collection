@@ -11,7 +11,7 @@ export default function Home({
 }: {
   initialResponse: ItemListResponseResultField;
 }) {
-  const { response, setCategory, setInputValue } = useItemList({
+  const { response, keyword, setCategory, setInputValue } = useItemList({
     response: initialResponse,
     category: CATEGORIES[0],
   });
@@ -29,7 +29,8 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Top
-        items={response.items.length > 0 ? response.items : initialResponse.items}
+        response={response}
+        keyword={keyword}
         categories={CATEGORIES}
         onChangeCategory={onChangeCategory}
         onChangeInput={onChangeInput}

@@ -8,7 +8,7 @@ type UseItems = {
   category: string;
 };
 
-type ItemListResponse = {
+export type ItemListResponse = {
   resultCount: ItemListResponseResultField['result_count'];
   totalCount: ItemListResponseResultField['total_count'];
   firstPosition: ItemListResponseResultField['first_position'];
@@ -53,5 +53,5 @@ export function useItemList({ response: initialResponse, category: initialCatego
   useDebounce(search, 500, [inputValue]);
   useEffect(search, [category]);
 
-  return { response, setCategory, setInputValue };
+  return { response, keyword: keyword.current, setCategory, setInputValue };
 }
