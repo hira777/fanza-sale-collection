@@ -1,13 +1,18 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { itemListService } from '../services/itemList';
-import { Items } from '../types/api/';
-import useItems from '../hooks/useItems';
+import { ItemListResponseResultField } from '../types/api/';
+import { useItemList } from '../hooks/useItemList';
 import { Top } from '../screens/Top';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
 
-export default function Home({ initialItems }: { initialItems: Items }) {
-  const { items, setCategory, setInputValue } = useItems({
+export default function Home({
+  initialResponse,
+}: {
+  initialResponse: ItemListResponseResultField;
+}) {
+  const { response, keyword, setCategory, setInputValue } = useItemList({
+    response: initialResponse,
     category: CATEGORIES[0],
   });
   const onChangeInput = (value: string) => {
@@ -24,7 +29,8 @@ export default function Home({ initialItems }: { initialItems: Items }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Top
-        items={items.length > 0 ? items : initialItems}
+        response={response}
+        keyword={keyword}
         categories={CATEGORIES}
         onChangeCategory={onChangeCategory}
         onChangeInput={onChangeInput}
@@ -40,7 +46,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      initialItems: data.items,
+      initialResponse: data,
     },
   };
 };
