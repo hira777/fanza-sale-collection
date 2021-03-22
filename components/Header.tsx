@@ -23,7 +23,7 @@ export function Header({ title, menu, input }: HeaderProps) {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" elevation={0}>
       <Container fixed maxWidth="md">
         <Toolbar className={classes.toolbar}>
           {title}

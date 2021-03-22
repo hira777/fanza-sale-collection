@@ -12,11 +12,10 @@ export function ResultStats({ keyword, response }: ResultStatsProps) {
   return (
     <>
       <Typography variant="subtitle1" variantMapping={{ subtitle1: 'p' }}>
-        "{keyword}" の検索結果
+        <span style={{ fontWeight: 'bold' }}>"{keyword}"</span>の検索結果
       </Typography>
       <Typography variant="subtitle2" variantMapping={{ subtitle2: 'p' }}>
-        {totalCount}タイトル中 {firstPosition}～
-        {firstPosition + resultCount - 1}タイトル
+        {totalCount}タイトル中 {firstPosition}～{firstPosition + resultCount - 1}タイトル
       </Typography>
     </>
   );

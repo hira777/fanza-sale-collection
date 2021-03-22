@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Header Default 1`] = `
 <header
-  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation0"
 >
   <div
     className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
@@ -926,9 +926,18 @@ Array [
   <p
     className="MuiTypography-root MuiTypography-subtitle1"
   >
-    "
-    期間限定セール
-    " の検索結果
+    <span
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "
+      期間限定セール
+      "
+    </span>
+    の検索結果
   </p>,
   <p
     className="MuiTypography-root MuiTypography-subtitle2"
@@ -946,7 +955,7 @@ Array [
 exports[`Storyshots Screens/Top Default 1`] = `
 Array [
   <header
-    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation0"
   >
     <div
       className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
@@ -1054,9 +1063,18 @@ Array [
       <p
         className="MuiTypography-root MuiTypography-subtitle1"
       >
-        "
-        期間限定セール
-        " の検索結果
+        <span
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          "
+          期間限定セール
+          "
+        </span>
+        の検索結果
       </p>
       <p
         className="MuiTypography-root MuiTypography-subtitle2"
