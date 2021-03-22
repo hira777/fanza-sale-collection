@@ -3,7 +3,7 @@ import { renderHook, act } from '@testing-library/react-hooks';
 import { getItems } from '../mock/items';
 import { getCategories } from '../mock/categories';
 import { itemListService } from '../services/itemList';
-import useItems from './useItems';
+import { useItemList } from './useItemList';
 
 function getResponse(items) {
   return {
@@ -22,10 +22,8 @@ function getResponse(items) {
 }
 
 jest.mock('../services/itemList');
-const modkedItemListService = itemListService as jest.Mocked<
-  typeof itemListService
->;
-describe('useItems', () => {
+const modkedItemListService = itemListService as jest.Mocked<typeof itemListService>;
+describe('useItemList', () => {
   const items = getItems();
   const categories = getCategories();
   const response = getResponse(items);
@@ -37,7 +35,7 @@ describe('useItems', () => {
   });
 
   test('空の商品リストを返す', async () => {
-    const { result } = renderHook(() => useItems({ category: categories[0] }));
+    const { result } = renderHook(() => useItemList({ category: categories[0] }));
 
     expect(spyItemListService).toHaveBeenCalledTimes(0);
     expect(result.current.items).toEqual([]);
@@ -45,7 +43,7 @@ describe('useItems', () => {
 
   test('カテゴリを変更すると、API にリクエストして商品リストを返す', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
-      useItems({ category: categories[0] })
+      useItemList({ category: categories[0] })
     );
 
     act(() => {
@@ -62,7 +60,7 @@ describe('useItems', () => {
 
   test('入力値を変更してから500ms後、API にリクエストして商品リストを返す', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
-      useItems({ category: categories[0] })
+      useItemList({ category: categories[0] })
     );
 
     act(() => {
@@ -78,7 +76,7 @@ describe('useItems', () => {
   });
 
   test('入力値を変更してから500ms以内だと、まだ API にリクエストしていない', async () => {
-    const { result } = renderHook(() => useItems({ category: categories[0] }));
+    const { result } = renderHook(() => useItemList({ category: categories[0] }));
 
     act(() => {
       result.current.setInputValue('AAA');

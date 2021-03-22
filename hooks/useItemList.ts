@@ -6,7 +6,7 @@ type UseItems = {
   category: string;
 };
 
-export default function useItems({ category: initialCategory }: UseItems) {
+export function useItemList({ category: initialCategory }: UseItems) {
   const [items, setItems] = useState([]);
   const [category, setCategory] = useState(initialCategory);
   const [inputValue, setInputValue] = useState('');

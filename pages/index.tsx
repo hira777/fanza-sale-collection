@@ -2,12 +2,12 @@ import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { itemListService } from '../services/itemList';
 import { Items } from '../types/api/';
-import useItems from '../hooks/useItems';
+import { useItemList } from '../hooks/useItemList';
 import { Top } from '../screens/Top';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
 
 export default function Home({ initialItems }: { initialItems: Items }) {
-  const { items, setCategory, setInputValue } = useItems({
+  const { items, setCategory, setInputValue } = useItemList({
     category: CATEGORIES[0],
   });
   const onChangeInput = (value: string) => {
