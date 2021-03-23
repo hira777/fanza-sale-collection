@@ -2,6 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
 import { Top, TopProps } from '../screens/Top';
+import { Header } from '../components/Header';
 import * as ResultStatsStories from './ResultStats.stories';
 import { getItems } from '../mock/items';
 import { getCategories } from '../mock/categories';
@@ -18,6 +19,7 @@ const Template: Story<TopProps> = args => <Top {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
+  header: <Header categories={categories} onChangeCategory={() => {}} onChangeInput={() => {}} />,
   response: {
     items,
     firstPosition: ResultStatsStories.Default.args.response.firstPosition,
@@ -25,5 +27,4 @@ Default.args = {
     totalCount: ResultStatsStories.Default.args.response.totalCount,
   },
   keyword: ResultStatsStories.Default.args.keyword,
-  categories: categories,
 };

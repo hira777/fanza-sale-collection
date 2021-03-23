@@ -4,6 +4,7 @@ import { itemListService } from '../services/itemList';
 import { ItemListResponseResultField } from '../types/api/';
 import { useItemList } from '../hooks/useItemList';
 import { Top } from '../screens/Top';
+import { Header } from '../components/Header';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
 
 export default function Home({
@@ -31,9 +32,13 @@ export default function Home({
       <Top
         response={response}
         keyword={keyword}
-        categories={CATEGORIES}
-        onChangeCategory={onChangeCategory}
-        onChangeInput={onChangeInput}
+        header={
+          <Header
+            categories={CATEGORIES}
+            onChangeCategory={onChangeCategory}
+            onChangeInput={onChangeInput}
+          />
+        }
       />
     </div>
   );
