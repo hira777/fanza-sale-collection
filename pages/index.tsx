@@ -16,7 +16,7 @@ export default function Home({
     response: initialResponse,
     category: CATEGORIES[0],
   });
-  const onChangeInput = (value: string) => {
+  const onSubmit = (value: string) => {
     setInputValue(value);
   };
   const onChangeCategory = (selectedCategory: string) => {
@@ -33,11 +33,7 @@ export default function Home({
         response={response}
         keyword={keyword}
         header={
-          <Header
-            categories={CATEGORIES}
-            onChangeCategory={onChangeCategory}
-            onChangeInput={onChangeInput}
-          />
+          <Header categories={CATEGORIES} onChangeCategory={onChangeCategory} onSubmit={onSubmit} />
         }
       />
     </div>

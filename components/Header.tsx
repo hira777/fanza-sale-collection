@@ -19,10 +19,10 @@ const useStyles = makeStyles(() =>
 export type HeaderProps = {
   categories: HeaderMenuProps['categories'];
   onChangeCategory: HeaderMenuProps['onChangeCategory'];
-  onChangeInput: HeaderInputProps['onChangeInput'];
+  onSubmit: HeaderInputProps['onSubmit'];
 };
 
-export function Header({ categories, onChangeCategory, onChangeInput }: HeaderProps) {
+export function Header({ categories, onChangeCategory, onSubmit }: HeaderProps) {
   const classes = useStyles();
 
   return (
@@ -31,7 +31,7 @@ export function Header({ categories, onChangeCategory, onChangeInput }: HeaderPr
         <Toolbar className={classes.toolbar}>
           <HeaderTitle />
           <HeaderMenu categories={categories} onChangeCategory={onChangeCategory} />
-          <HeaderInput onChangeInput={onChangeInput} />
+          <HeaderInput onSubmit={onSubmit} />
         </Toolbar>
       </Container>
     </AppBar>

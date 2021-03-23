@@ -81,7 +81,7 @@ describe('useItemList', () => {
     expect(result.current.keyword).toBe(`${categories[1]} `);
   });
 
-  test('入力値を変更してから500ms後、API にリクエストしてレスポンスを返す', async () => {
+  test('入力値を変更すると、API にリクエストしてレスポンスを返す', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
       useItemList({
         response: initialResponseData,
@@ -103,20 +103,5 @@ describe('useItemList', () => {
     expect(result.current.response.totalCount).toBe(response.data.total_count);
     expect(result.current.response.firstPosition).toBe(response.data.first_position);
     expect(result.current.keyword).toBe(`${categories[0]} AAA`);
-  });
-
-  test('入力値を変更してから500ms以内だと、まだ API にリクエストしていない', async () => {
-    const { result } = renderHook(() =>
-      useItemList({
-        response: initialResponseData,
-        category: categories[0],
-      })
-    );
-
-    act(() => {
-      result.current.setInputValue('AAA');
-    });
-
-    expect(spyItemListService).toHaveBeenCalledTimes(0);
   });
 });

@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { useDebounce } from 'react-use';
 import { ItemListResponseResultField } from '../types/api/';
 import { itemListService } from '../services/itemList';
 
@@ -50,7 +49,7 @@ export function useItemList({ response: initialResponse, category: initialCatego
     fetchData();
   };
 
-  useDebounce(search, 500, [inputValue]);
+  useEffect(search, [inputValue]);
   useEffect(search, [category]);
 
   return { response, keyword: keyword.current, setCategory, setInputValue };

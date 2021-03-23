@@ -19,7 +19,7 @@ const Template: Story<TopProps> = args => <Top {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  header: <Header categories={categories} onChangeCategory={() => {}} onChangeInput={() => {}} />,
+  header: <Header categories={categories} onChangeCategory={() => {}} onSubmit={() => {}} />,
   response: {
     items,
     firstPosition: ResultStatsStories.Default.args.response.firstPosition,
