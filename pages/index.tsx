@@ -1,5 +1,5 @@
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
-import { GetStaticProps } from 'next';
 import { itemListService } from '../services/itemList';
 import { ItemListResponseResultField } from '../types/api/';
 import { useItemList } from '../hooks/useItemList';
@@ -40,7 +40,7 @@ export default function Home({
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data } = await itemListService.get({
     keyword: CATEGORIES[0],
   });
