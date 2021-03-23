@@ -26,12 +26,14 @@ export function Header({ categories, onChangeCategory, onSubmit }: HeaderProps) 
   const classes = useStyles();
 
   return (
-    <AppBar position="static" elevation={0}>
+    <AppBar position="static" elevation={0} color="default">
       <Container fixed maxWidth="md">
         <Toolbar className={classes.toolbar}>
           <HeaderTitle />
           <HeaderMenu categories={categories} onChangeCategory={onChangeCategory} />
-          <HeaderInput onSubmit={onSubmit} />
+          <div style={{ marginLeft: 10 }}>
+            <HeaderInput onSubmit={onSubmit} />
+          </div>
         </Toolbar>
       </Container>
     </AppBar>

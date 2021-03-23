@@ -8,14 +8,18 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    category: {
-      margin: theme.spacing(0, 0.5, 0, 1),
+    button: {
+      paddingLeft: theme.spacing(0.5),
+      paddingRight: theme.spacing(0.5),
+    },
+    buttonLabel: {
+      margin: theme.spacing(0, 1, 0, 1),
       display: 'none',
       [theme.breakpoints.up('md')]: {
         display: 'block',
       },
     },
-    categoryItem: {
+    menuItem: {
       width: '100%',
     },
   })
@@ -46,11 +50,14 @@ export function HeaderMenu({ categories, onChangeCategory }: HeaderMenuProps) {
       <Tooltip title="カテゴリ" enterDelay={300}>
         <Button
           color="inherit"
+          variant="contained"
+          disableElevation
           aria-owns={categoryMenu ? 'category-menu' : undefined}
           aria-haspopup="true"
           onClick={onClickCategory}
+          className={classes.button}
         >
-          <span className={classes.category}>
+          <span className={classes.buttonLabel}>
             {categories.filter(category => category === selectedCategory)[0]}
           </span>
           <ExpandMoreIcon fontSize="small" />
@@ -69,7 +76,7 @@ export function HeaderMenu({ categories, onChangeCategory }: HeaderMenuProps) {
             selected={selectedCategory === category}
             onClick={onCloseCategoryMenu}
             data-category={category}
-            className={classes.categoryItem}
+            className={classes.menuItem}
           >
             {category}
           </MenuItem>
