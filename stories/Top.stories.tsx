@@ -4,8 +4,8 @@ import { Story, Meta } from '@storybook/react';
 import { Top, TopProps } from '../screens/Top';
 import { Header } from '../components/Header';
 import * as ResultStatsStories from './ResultStats.stories';
-import { getItems } from '../mock/items';
-import { getCategories } from '../mock/categories';
+import { getItems } from '../mocks/items';
+import { getCategories } from '../mocks/categories';
 
 export default {
   title: 'Screens/Top',
@@ -15,7 +15,7 @@ export default {
 const items = getItems();
 const categories = getCategories();
 
-const Template: Story<TopProps> = args => <Top {...args} />;
+const Template: Story<TopProps> = (args) => <Top {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
