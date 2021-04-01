@@ -5,6 +5,7 @@ import { itemListService } from '../services/itemList';
 type UseItems = {
   response: ItemListResponseResultField;
   category: string;
+  offset?: number;
 };
 
 export type ItemListResponse = {
@@ -14,7 +15,11 @@ export type ItemListResponse = {
   items: ItemListResponseResultField['items'];
 };
 
-export function useItemList({ response: initialResponse, category: initialCategory }: UseItems) {
+export function useItemList({
+  response: initialResponse,
+  category: initialCategory,
+  offset: initialOffset = 1,
+}: UseItems) {
   const [response, setResponse] = useState<ItemListResponse>({
     resultCount: initialResponse.result_count,
     totalCount: initialResponse.total_count,
@@ -23,19 +28,28 @@ export function useItemList({ response: initialResponse, category: initialCatego
   });
   const [category, setCategory] = useState(initialCategory);
   const [inputValue, setInputValue] = useState('');
+  const [offset, setOffset] = useState(initialOffset);
   const keyword = useRef(`${category} ${inputValue}`);
+  const offsetRef = useRef(offset);
   const search = () => {
     const newKeyword = `${category} ${inputValue}`;
 
-    if (keyword.current === newKeyword) {
+    if (keyword.current === newKeyword && offsetRef.current === offset) {
       return;
     }
 
-    keyword.current = newKeyword;
+    if (keyword.current !== newKeyword) {
+      keyword.current = newKeyword;
+      offsetRef.current = 1;
+      setOffset(1);
+    } else if (offsetRef.current !== offset) {
+      offsetRef.current = offset;
+    }
 
     const fetchData = async () => {
       const { data } = await itemListService.get({
         keyword: keyword.current,
+        offset: offsetRef.current,
       });
       setResponse({
         ...response,
@@ -51,6 +65,7 @@ export function useItemList({ response: initialResponse, category: initialCatego
 
   useEffect(search, [inputValue]);
   useEffect(search, [category]);
+  useEffect(search, [offset]);
 
-  return { response, keyword: keyword.current, setCategory, setInputValue };
+  return { response, keyword: keyword.current, setCategory, setInputValue, setOffset };
 }
