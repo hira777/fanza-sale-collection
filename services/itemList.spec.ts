@@ -2,7 +2,7 @@ import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import { itemListService } from './itemList';
 import { getItems } from '../mocks/items';
-import { ItemListResponseResultField as Response } from '../types/api';
+import { ItemListResponseResult as Response } from '../types/api';
 
 const items = getItems();
 const response: Response = {

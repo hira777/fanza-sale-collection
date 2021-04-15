@@ -1,18 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
-import { ItemListResponseResultField } from '../types/api/';
+import { ItemListResponseResult } from '../types/api/';
 import { itemListService } from '../services/itemList';
 
 type UseItems = {
-  response: ItemListResponseResultField;
+  response: ItemListResponseResult;
   category: string;
   offset?: number;
 };
 
 export type ItemListResponse = {
-  resultCount: ItemListResponseResultField['result_count'];
-  totalCount: ItemListResponseResultField['total_count'];
-  firstPosition: ItemListResponseResultField['first_position'];
-  items: ItemListResponseResultField['items'];
+  resultCount: ItemListResponseResult['result_count'];
+  totalCount: ItemListResponseResult['total_count'];
+  firstPosition: ItemListResponseResult['first_position'];
+  items: ItemListResponseResult['items'];
 };
 
 export function useItemList({

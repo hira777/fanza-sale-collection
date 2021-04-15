@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {
   ItemListOptionalRequestParameters as Request,
-  ItemListResponseResultField as Response,
+  ItemListResponseResult as Response,
 } from '../types/api';
 
 const client = axios.create({
@@ -12,10 +12,7 @@ const client = axios.create({
   responseType: 'json',
 });
 
-function get(params?: {
-  keyword?: Request['keyword'];
-  offset?: Request['offset'];
-}) {
+function get(params?: { keyword?: Request['keyword']; offset?: Request['offset'] }) {
   return client.get<Response>('/', {
     params,
   });

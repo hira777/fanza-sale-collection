@@ -144,7 +144,7 @@ export type ItemInfo = {
 
 export type Items = ItemInfo[];
 
-export type ItemListResponseResultField = Readonly<{
+export type ItemListResponseResult = Readonly<{
   status: number; // ステータスコード
   result_count: number; // 取得件数
   total_count: number; // 全体件数
@@ -156,5 +156,5 @@ export type ItemListResponse = Readonly<{
   request: {
     parameters: {};
   };
-  result: ItemListResponseResultField;
+  result: ItemListResponseResult;
 }>;

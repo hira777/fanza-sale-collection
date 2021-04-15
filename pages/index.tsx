@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
 import { itemListService } from '../services/itemList';
-import { ItemListResponseResultField } from '../types/api/';
+import { ItemListResponseResult } from '../types/api/';
 import { useItemList } from '../hooks/useItemList';
 import { Header } from '../components/Header';
 import { ItemList } from '../components/ItemList';
@@ -15,7 +15,7 @@ import { ResultStats } from '../components/ResultStats';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
 
 export type HomeProps = {
-  initialResponse: ItemListResponseResultField;
+  initialResponse: ItemListResponseResult;
 };
 
 export default function Home({ initialResponse }: HomeProps) {
