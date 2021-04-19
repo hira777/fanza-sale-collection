@@ -22,7 +22,10 @@ const client = axios.create({
   responseType: 'json',
 });
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<ItemListResponse['result'] | { error: string }>
+) {
   if (req.method !== 'GET') {
     res.setHeader('Allow', ['GET']);
     res.status(405).end(`Method ${req.method} Not Allowed`);
