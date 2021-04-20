@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+
 import { ItemListResponseResult } from '../types/api/';
 import { itemListService } from '../services/itemList';
 
@@ -8,31 +9,19 @@ type UseItems = {
   offset?: number;
 };
 
-export type ItemListResponse = {
-  resultCount: ItemListResponseResult['result_count'];
-  totalCount: ItemListResponseResult['total_count'];
-  firstPosition: ItemListResponseResult['first_position'];
-  items: ItemListResponseResult['items'];
-};
-
 export function useItemList({
   response: initialResponse,
   category: initialCategory,
   offset: initialOffset = 1,
 }: UseItems) {
-  const [response, setResponse] = useState<ItemListResponse>({
-    resultCount: initialResponse.result_count,
-    totalCount: initialResponse.total_count,
-    firstPosition: initialResponse.first_position,
-    items: initialResponse.items,
-  });
+  const [response, setResponse] = useState(initialResponse);
   const [category, setCategory] = useState(initialCategory);
   const [inputValue, setInputValue] = useState('');
   const [offset, setOffset] = useState(initialOffset);
-  const keyword = useRef(`${category} ${inputValue}`);
+  const keyword = useRef(category);
   const offsetRef = useRef(offset);
   const search = () => {
-    const newKeyword = `${category} ${inputValue}`;
+    const newKeyword = inputValue ? `${category} ${inputValue}` : category;
 
     if (keyword.current === newKeyword && offsetRef.current === offset) {
       return;
@@ -51,13 +40,7 @@ export function useItemList({
         keyword: keyword.current,
         offset: offsetRef.current,
       });
-      setResponse({
-        ...response,
-        items: data.items,
-        resultCount: data.result_count,
-        totalCount: data.total_count,
-        firstPosition: data.first_position,
-      });
+      setResponse(data);
     };
 
     fetchData();

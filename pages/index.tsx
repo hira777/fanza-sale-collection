@@ -57,8 +57,8 @@ export default function Home({ initialResponse }: HomeProps) {
           <div style={{ marginTop: 10 }}>{itemList}</div>
           <Box display="flex" justifyContent="center" mt={3} mb={3}>
             <Pagination
-              page={response.firstPosition}
-              count={Math.floor(response.totalCount / pageSize) + 1}
+              page={response.first_position}
+              count={Math.floor(response.total_count / pageSize) + 1}
               onChange={onChange}
             />
           </Box>
