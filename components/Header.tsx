@@ -26,7 +26,7 @@ export function Header({ categories, onChangeCategory, onSubmit }: HeaderProps) 
   const classes = useStyles();
 
   return (
-    <AppBar position="static" elevation={0} color="default">
+    <AppBar position="static" elevation={0} color="default" data-testid="header">
       <Container fixed maxWidth="md">
         <Toolbar className={classes.toolbar}>
           <HeaderTitle />
