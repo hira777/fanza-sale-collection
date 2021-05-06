@@ -306,6 +306,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-45"
+                  data-testid="item-list-item-price"
                 >
                   350円~
                 </span>
@@ -372,6 +373,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-46"
+                  data-testid="item-list-item-price"
                 >
                   500円~
                 </span>
@@ -438,6 +440,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-47"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -504,6 +507,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-48"
+                  data-testid="item-list-item-price"
                 >
                   980円~
                 </span>
@@ -570,6 +574,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-49"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -636,6 +641,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-50"
+                  data-testid="item-list-item-price"
                 >
                   300円~
                 </span>
@@ -702,6 +708,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-51"
+                  data-testid="item-list-item-price"
                 >
                   350円~
                 </span>
@@ -768,6 +775,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-52"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -834,6 +842,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-53"
+                  data-testid="item-list-item-price"
                 >
                   300円~
                 </span>
@@ -900,6 +909,7 @@ exports[`Storyshots Components/ItemList Default 1`] = `
               >
                 <span
                   className="MuiBox-root MuiBox-root-54"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -971,6 +981,7 @@ exports[`Storyshots Components/ItemListItem Default 1`] = `
           >
             <span
               className="MuiBox-root MuiBox-root-60"
+              data-testid="item-list-item-price"
             >
               350円~
             </span>
@@ -1649,6 +1660,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-29"
+                          data-testid="item-list-item-price"
                         >
                           350円~
                         </span>
@@ -1718,6 +1730,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-30"
+                          data-testid="item-list-item-price"
                         >
                           500円~
                         </span>
@@ -1787,6 +1800,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-31"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -1856,6 +1870,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-32"
+                          data-testid="item-list-item-price"
                         >
                           980円~
                         </span>
@@ -1925,6 +1940,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-33"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -1994,6 +2010,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-34"
+                          data-testid="item-list-item-price"
                         >
                           300円~
                         </span>
@@ -2063,6 +2080,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-35"
+                          data-testid="item-list-item-price"
                         >
                           350円~
                         </span>
@@ -2132,6 +2150,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-36"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -2201,6 +2220,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-37"
+                          data-testid="item-list-item-price"
                         >
                           300円~
                         </span>
@@ -2270,6 +2290,7 @@ exports[`Storyshots Pages/Home Default 1`] = `
                       >
                         <span
                           className="MuiBox-root MuiBox-root-38"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
