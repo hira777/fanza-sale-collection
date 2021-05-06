@@ -37,7 +37,7 @@ export function HeaderMenu({ categories, onChangeCategory }: HeaderMenuProps) {
   const onClickCategory = (event: MouseEvent<HTMLButtonElement>) => {
     setCategoryMenu(event.currentTarget);
   };
-  const onCloseCategoryMenu = event => {
+  const onCloseCategoryMenu = (event) => {
     if (event.currentTarget.nodeName === 'BUTTON') {
       setSelectedCategory(event.currentTarget.getAttribute('data-category'));
       onChangeCategory(event.currentTarget.getAttribute('data-category'));
@@ -58,7 +58,7 @@ export function HeaderMenu({ categories, onChangeCategory }: HeaderMenuProps) {
           className={classes.button}
         >
           <span className={classes.buttonLabel}>
-            {categories.filter(category => category === selectedCategory)[0]}
+            {categories.filter((category) => category === selectedCategory)[0]}
           </span>
           <ExpandMoreIcon fontSize="small" />
         </Button>
@@ -69,7 +69,7 @@ export function HeaderMenu({ categories, onChangeCategory }: HeaderMenuProps) {
         open={Boolean(categoryMenu)}
         onClose={onCloseCategoryMenu}
       >
-        {categories.map(category => (
+        {categories.map((category) => (
           <MenuItem
             component="button"
             key={category}
