@@ -2,7 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/';
 
 import { ItemListItem, ItemListItemProps } from '../components/ItemListItem';
-import { getItems } from '../mock/items';
+import { getItems } from '../mocks/items';
 
 export default {
   title: 'Components/ItemListItem',
@@ -10,7 +10,7 @@ export default {
 } as Meta;
 
 const items = getItems();
-const Template: Story<ItemListItemProps> = args => <ItemListItem {...args} />;
+const Template: Story<ItemListItemProps> = (args) => <ItemListItem {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

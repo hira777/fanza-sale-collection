@@ -2,7 +2,8 @@
 
 exports[`Storyshots Components/Header Default 1`] = `
 <header
-  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation0"
+  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault MuiPaper-elevation0"
+  data-testid="header"
 >
   <div
     className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
@@ -18,7 +19,7 @@ exports[`Storyshots Components/Header Default 1`] = `
       <button
         aria-describedby={null}
         aria-haspopup="true"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-3 MuiButton-colorInherit MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -41,7 +42,7 @@ exports[`Storyshots Components/Header Default 1`] = `
           className="MuiButton-label"
         >
           <span
-            className="makeStyles-category-3"
+            className="makeStyles-buttonLabel-4"
           >
             春のパンツまつり30％OFF第2弾
           </span>
@@ -61,38 +62,69 @@ exports[`Storyshots Components/Header Default 1`] = `
         />
       </button>
       <div
-        className="makeStyles-search-5"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
       >
-        <div
-          className="makeStyles-searchIcon-6"
+        <form
+          className="MuiPaper-root makeStyles-root-6 MuiPaper-outlined MuiPaper-rounded"
+          onSubmit={[Function]}
         >
-          <svg
-            aria-hidden={true}
-            className="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
+          <div
+            className="MuiInputBase-root makeStyles-inputRoot-7"
+            onClick={[Function]}
           >
-            <path
-              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            <input
+              aria-label="keyword search"
+              className="MuiInputBase-input makeStyles-inputInput-8"
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="キーワードから探す"
+              type="text"
+              value=""
             />
-          </svg>
-        </div>
-        <div
-          className="MuiInputBase-root makeStyles-inputRoot-7"
-          onClick={[Function]}
-        >
-          <input
-            aria-label="keyword search"
-            className="MuiInputBase-input makeStyles-inputInput-8"
-            onAnimationStart={[Function]}
+          </div>
+          <button
+            aria-label="search"
+            className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+            disabled={false}
             onBlur={[Function]}
-            onChange={[Function]}
+            onDragLeave={[Function]}
             onFocus={[Function]}
-            placeholder="キーワードから探す"
-            type="text"
-            value=""
-          />
-        </div>
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="submit"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </form>
       </div>
     </div>
   </div>
@@ -100,30 +132,17 @@ exports[`Storyshots Components/Header Default 1`] = `
 `;
 
 exports[`Storyshots Components/HeaderInput Default 1`] = `
-<div
-  className="makeStyles-search-9"
+<form
+  className="MuiPaper-root makeStyles-root-9 MuiPaper-outlined MuiPaper-rounded"
+  onSubmit={[Function]}
 >
   <div
-    className="makeStyles-searchIcon-10"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-      />
-    </svg>
-  </div>
-  <div
-    className="MuiInputBase-root makeStyles-inputRoot-11"
+    className="MuiInputBase-root makeStyles-inputRoot-10"
     onClick={[Function]}
   >
     <input
       aria-label="keyword search"
-      className="MuiInputBase-input makeStyles-inputInput-12"
+      className="MuiInputBase-input makeStyles-inputInput-11"
       onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
@@ -133,14 +152,47 @@ exports[`Storyshots Components/HeaderInput Default 1`] = `
       value=""
     />
   </div>
-</div>
+  <button
+    aria-label="search"
+    className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="submit"
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </span>
+  </button>
+</form>
 `;
 
 exports[`Storyshots Components/HeaderMenu Default 1`] = `
 <button
   aria-describedby={null}
   aria-haspopup="true"
-  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-12 MuiButton-colorInherit MuiButton-disableElevation"
   disabled={false}
   onBlur={[Function]}
   onClick={[Function]}
@@ -163,7 +215,7 @@ exports[`Storyshots Components/HeaderMenu Default 1`] = `
     className="MuiButton-label"
   >
     <span
-      className="makeStyles-category-13"
+      className="makeStyles-buttonLabel-13"
     >
       春のパンツまつり30％OFF第2弾
     </span>
@@ -195,15 +247,17 @@ exports[`Storyshots Components/HeaderTitle Default 1`] = `
 exports[`Storyshots Components/ItemList Default 1`] = `
 <div
   className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+  data-testid="item-list"
 >
   <div
     className="MuiGrid-root MuiGrid-container"
   >
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -231,19 +285,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mimk00078/mimk00078ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！
               </h2>
@@ -251,7 +305,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-21"
+                  className="MuiBox-root MuiBox-root-45"
+                  data-testid="item-list-item-price"
                 >
                   350円~
                 </span>
@@ -265,10 +320,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -296,19 +352,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/118ppt00092/118ppt00092ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！
               </h2>
@@ -316,7 +372,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-22"
+                  className="MuiBox-root MuiBox-root-46"
+                  data-testid="item-list-item-price"
                 >
                   500円~
                 </span>
@@ -330,10 +387,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -361,19 +419,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/ebod00806/ebod00806ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン
               </h2>
@@ -381,7 +439,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-23"
+                  className="MuiBox-root MuiBox-root-47"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -395,10 +454,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -426,19 +486,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/13dsvr00942/13dsvr00942ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し
               </h2>
@@ -446,7 +506,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-24"
+                  className="MuiBox-root MuiBox-root-48"
+                  data-testid="item-list-item-price"
                 >
                   980円~
                 </span>
@@ -460,10 +521,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -491,19 +553,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/ipx00628/ipx00628ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="中出しSEX解禁 桜空もも"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 中出しSEX解禁 桜空もも
               </h2>
@@ -511,7 +573,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-25"
+                  className="MuiBox-root MuiBox-root-49"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -525,10 +588,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -556,19 +620,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/idbd00754/idbd00754ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="希志あいのCOMPLETEBOX48時間"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 希志あいのCOMPLETEBOX48時間
               </h2>
@@ -576,7 +640,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-26"
+                  className="MuiBox-root MuiBox-root-50"
+                  data-testid="item-list-item-price"
                 >
                   300円~
                 </span>
@@ -590,10 +655,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -621,19 +687,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/bf00610/bf00610ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編
               </h2>
@@ -641,7 +707,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-27"
+                  className="MuiBox-root MuiBox-root-51"
+                  data-testid="item-list-item-price"
                 >
                   350円~
                 </span>
@@ -655,10 +722,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -686,19 +754,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mide00900/mide00900ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望
               </h2>
@@ -706,7 +774,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-28"
+                  className="MuiBox-root MuiBox-root-52"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -720,10 +789,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -751,19 +821,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/ofje00236/ofje00236ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル
               </h2>
@@ -771,7 +841,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-29"
+                  className="MuiBox-root MuiBox-root-53"
+                  data-testid="item-list-item-price"
                 >
                   300円~
                 </span>
@@ -785,10 +856,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root makeStyles-gridItem-16 MuiGrid-item"
+      className="MuiGrid-root makeStyles-gridItem-40 MuiGrid-item"
+      data-testid="item-list-item"
     >
       <div
-        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-17 MuiPaper-outlined"
+        className="MuiPaper-root MuiCard-root makeStyles-CardRoot-41 MuiPaper-outlined"
       >
         <button
           className="MuiButtonBase-root MuiCardActionArea-root"
@@ -816,19 +888,19 @@ exports[`Storyshots Components/ItemList Default 1`] = `
             target="_blank"
           >
             <div
-              className="MuiCardMedia-root makeStyles-cardMedia-18"
+              className="MuiCardMedia-root makeStyles-cardMedia-42"
               style={
                 Object {
-                  "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mide00897/mide00897ps.jpg\\")",
+                  "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                 }
               }
               title="家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ"
             />
             <div
-              className="MuiCardContent-root makeStyles-cardContent-19"
+              className="MuiCardContent-root makeStyles-cardContent-43"
             >
               <h2
-                className="MuiTypography-root makeStyles-cardTitle-20 MuiTypography-caption MuiTypography-gutterBottom"
+                className="MuiTypography-root makeStyles-cardTitle-44 MuiTypography-caption MuiTypography-gutterBottom"
               >
                 家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ
               </h2>
@@ -836,7 +908,8 @@ exports[`Storyshots Components/ItemList Default 1`] = `
                 className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
               >
                 <span
-                  className="MuiBox-root MuiBox-root-30"
+                  className="MuiBox-root MuiBox-root-54"
+                  data-testid="item-list-item-price"
                 >
                   1,980円~
                 </span>
@@ -855,10 +928,11 @@ exports[`Storyshots Components/ItemList Default 1`] = `
 
 exports[`Storyshots Components/ItemListItem Default 1`] = `
 <div
-  className="MuiGrid-root makeStyles-gridItem-31 MuiGrid-item"
+  className="MuiGrid-root makeStyles-gridItem-55 MuiGrid-item"
+  data-testid="item-list-item"
 >
   <div
-    className="MuiPaper-root MuiCard-root makeStyles-CardRoot-32 MuiPaper-outlined"
+    className="MuiPaper-root MuiCard-root makeStyles-CardRoot-56 MuiPaper-outlined"
   >
     <button
       className="MuiButtonBase-root MuiCardActionArea-root"
@@ -886,19 +960,19 @@ exports[`Storyshots Components/ItemListItem Default 1`] = `
         target="_blank"
       >
         <div
-          className="MuiCardMedia-root makeStyles-cardMedia-33"
+          className="MuiCardMedia-root makeStyles-cardMedia-57"
           style={
             Object {
-              "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mimk00078/mimk00078ps.jpg\\")",
+              "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
             }
           }
           title="1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！"
         />
         <div
-          className="MuiCardContent-root makeStyles-cardContent-34"
+          className="MuiCardContent-root makeStyles-cardContent-58"
         >
           <h2
-            className="MuiTypography-root makeStyles-cardTitle-35 MuiTypography-caption MuiTypography-gutterBottom"
+            className="MuiTypography-root makeStyles-cardTitle-59 MuiTypography-caption MuiTypography-gutterBottom"
           >
             1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！
           </h2>
@@ -906,7 +980,8 @@ exports[`Storyshots Components/ItemListItem Default 1`] = `
             className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
           >
             <span
-              className="MuiBox-root MuiBox-root-36"
+              className="MuiBox-root MuiBox-root-60"
+              data-testid="item-list-item-price"
             >
               350円~
             </span>
@@ -921,10 +996,406 @@ exports[`Storyshots Components/ItemListItem Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Pagination Default 1`] = `
+<nav
+  aria-label="pagination navigation"
+  className="MuiPagination-root"
+  data-testid="pagination"
+>
+  <ul
+    className="MuiPagination-ul"
+  >
+    <li>
+      <button
+        aria-label="Go to previous page"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiPaginationItem-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+          />
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button
+        aria-current="true"
+        aria-label="page 1"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        1
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to page 2"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        2
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to page 3"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        3
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to page 4"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        4
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to page 5"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        5
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to next page"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiPaginationItem-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Storyshots Components/Pagination Only One Page 1`] = `
+<nav
+  aria-label="pagination navigation"
+  className="MuiPagination-root"
+  data-testid="pagination"
+>
+  <ul
+    className="MuiPagination-ul"
+  >
+    <li>
+      <button
+        aria-label="Go to previous page"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiPaginationItem-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+          />
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button
+        aria-current="true"
+        aria-label="page 1"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        1
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to next page"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiPaginationItem-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Storyshots Components/Pagination With Two Page 1`] = `
+<nav
+  aria-label="pagination navigation"
+  className="MuiPagination-root"
+  data-testid="pagination"
+>
+  <ul
+    className="MuiPagination-ul"
+  >
+    <li>
+      <button
+        aria-label="Go to previous page"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiPaginationItem-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+          />
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button
+        aria-current="true"
+        aria-label="page 1"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        1
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Go to next page"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiPaginationItem-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
+`;
+
 exports[`Storyshots Components/ResultStats Default 1`] = `
 Array [
   <p
     className="MuiTypography-root MuiTypography-subtitle1"
+    data-testid="result-stats-text"
   >
     <span
       style={
@@ -941,6 +1412,7 @@ Array [
   </p>,
   <p
     className="MuiTypography-root MuiTypography-subtitle2"
+    data-testid="result-stats-number"
   >
     1000
     タイトル中 
@@ -952,26 +1424,27 @@ Array [
 ]
 `;
 
-exports[`Storyshots Screens/Top Default 1`] = `
-Array [
+exports[`Storyshots Pages/Home Default 1`] = `
+<div>
   <header
-    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation0"
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault MuiPaper-elevation0"
+    data-testid="header"
   >
     <div
       className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthMd"
     >
       <div
-        className="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-37 MuiToolbar-gutters"
+        className="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-16 MuiToolbar-gutters"
       >
         <h1
-          className="MuiTypography-root makeStyles-title-38 MuiTypography-h6"
+          className="MuiTypography-root makeStyles-title-17 MuiTypography-h6"
         >
           FANZA Sale Collection
         </h1>
         <button
           aria-describedby={null}
           aria-haspopup="true"
-          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-18 MuiButton-colorInherit MuiButton-disableElevation"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -994,9 +1467,9 @@ Array [
             className="MuiButton-label"
           >
             <span
-              className="makeStyles-category-39"
+              className="makeStyles-buttonLabel-19"
             >
-              春のパンツまつり30％OFF第2弾
+              SODクリエイト30%OFF
             </span>
             <svg
               aria-hidden={true}
@@ -1014,42 +1487,73 @@ Array [
           />
         </button>
         <div
-          className="makeStyles-search-41"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
         >
-          <div
-            className="makeStyles-searchIcon-42"
+          <form
+            className="MuiPaper-root makeStyles-root-21 MuiPaper-outlined MuiPaper-rounded"
+            onSubmit={[Function]}
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <div
+              className="MuiInputBase-root makeStyles-inputRoot-22"
+              onClick={[Function]}
             >
-              <path
-                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              <input
+                aria-label="keyword search"
+                className="MuiInputBase-input makeStyles-inputInput-23"
+                onAnimationStart={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="キーワードから探す"
+                type="text"
+                value=""
               />
-            </svg>
-          </div>
-          <div
-            className="MuiInputBase-root makeStyles-inputRoot-43"
-            onClick={[Function]}
-          >
-            <input
-              aria-label="keyword search"
-              className="MuiInputBase-input makeStyles-inputInput-44"
-              onAnimationStart={[Function]}
+            </div>
+            <button
+              aria-label="search"
+              className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+              disabled={false}
               onBlur={[Function]}
-              onChange={[Function]}
+              onDragLeave={[Function]}
               onFocus={[Function]}
-              placeholder="キーワードから探す"
-              type="text"
-              value=""
-            />
-          </div>
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              type="submit"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </form>
         </div>
       </div>
     </div>
-  </header>,
+  </header>
   <main
     style={
       Object {
@@ -1062,6 +1566,7 @@ Array [
     >
       <p
         className="MuiTypography-root MuiTypography-subtitle1"
+        data-testid="result-stats-text"
       >
         <span
           style={
@@ -1071,15 +1576,16 @@ Array [
           }
         >
           "
-          期間限定セール
+          SODクリエイト30%OFF
           "
         </span>
         の検索結果
       </p>
       <p
         className="MuiTypography-root MuiTypography-subtitle2"
+        data-testid="result-stats-number"
       >
-        1000
+        100
         タイトル中 
         1
         ～
@@ -1095,15 +1601,17 @@ Array [
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+          data-testid="item-list"
         >
           <div
             className="MuiGrid-root MuiGrid-container"
           >
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1131,19 +1639,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mimk00078/mimk00078ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         1000円カットのおネエさんにスいてもらう本。実写版 原作 越山弱衰 累計売上6万部越えエロ度120％の肉感コミックを実写化！
                       </h2>
@@ -1151,7 +1659,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-50"
+                          className="MuiBox-root MuiBox-root-29"
+                          data-testid="item-list-item-price"
                         >
                           350円~
                         </span>
@@ -1168,10 +1677,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1199,19 +1709,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/118ppt00092/118ppt00092ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         涼森れむ 8時間 BEST PRESTIGE PREMIUM TREASURE vol.01 全6作品で「涼森れむ」の軌跡をたどる永久保存盤！！
                       </h2>
@@ -1219,7 +1729,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-51"
+                          className="MuiBox-root MuiBox-root-30"
+                          data-testid="item-list-item-price"
                         >
                           500円~
                         </span>
@@ -1236,10 +1747,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1267,19 +1779,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/ebod00806/ebod00806ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         バイト先の大好きな巨乳ポニテちゃんが大嫌いな店長の種付けプレスで快楽寝取られ堕ちした。 楪カレン
                       </h2>
@@ -1287,7 +1799,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-52"
+                          className="MuiBox-root MuiBox-root-31"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -1304,10 +1817,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1335,19 +1849,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/13dsvr00942/13dsvr00942ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         【VR】新アングル！地面特化VR 小倉由菜「しゅきしゅき〜」相思相愛な激カワ彼女とだいしゅきホールド中出し
                       </h2>
@@ -1355,7 +1869,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-53"
+                          className="MuiBox-root MuiBox-root-32"
+                          data-testid="item-list-item-price"
                         >
                           980円~
                         </span>
@@ -1372,10 +1887,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1403,19 +1919,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/ipx00628/ipx00628ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="中出しSEX解禁 桜空もも"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         中出しSEX解禁 桜空もも
                       </h2>
@@ -1423,7 +1939,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-54"
+                          className="MuiBox-root MuiBox-root-33"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -1440,10 +1957,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1471,19 +1989,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/idbd00754/idbd00754ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="希志あいのCOMPLETEBOX48時間"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         希志あいのCOMPLETEBOX48時間
                       </h2>
@@ -1491,7 +2009,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-55"
+                          className="MuiBox-root MuiBox-root-34"
+                          data-testid="item-list-item-price"
                         >
                           300円~
                         </span>
@@ -1508,10 +2027,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1539,19 +2059,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/bf00610/bf00610ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         松下紗栄子 17時間BEST BeFree出演作品全編ノーカット総集編
                       </h2>
@@ -1559,7 +2079,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-56"
+                          className="MuiBox-root MuiBox-root-35"
+                          data-testid="item-list-item-price"
                         >
                           350円~
                         </span>
@@ -1576,10 +2097,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1607,19 +2129,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mide00900/mide00900ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         激イキ182回！膣痙攣3714回！本気汁13478cc！ 禁欲焦らしオーガズム大覚醒スペシャル！！〜30日間溜め込んだ性欲が爆発した一日〜 石原希望
                       </h2>
@@ -1627,7 +2149,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-57"
+                          className="MuiBox-root MuiBox-root-36"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -1644,10 +2167,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1675,19 +2199,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/ofje00236/ofje00236ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル
                       </h2>
@@ -1695,7 +2219,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-58"
+                          className="MuiBox-root MuiBox-root-37"
+                          data-testid="item-list-item-price"
                         >
                           300円~
                         </span>
@@ -1712,10 +2237,11 @@ Array [
               </div>
             </div>
             <div
-              className="MuiGrid-root makeStyles-gridItem-45 MuiGrid-item"
+              className="MuiGrid-root makeStyles-gridItem-24 MuiGrid-item"
+              data-testid="item-list-item"
             >
               <div
-                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-46 MuiPaper-outlined"
+                className="MuiPaper-root MuiCard-root makeStyles-CardRoot-25 MuiPaper-outlined"
               >
                 <button
                   className="MuiButtonBase-root MuiCardActionArea-root"
@@ -1743,19 +2269,19 @@ Array [
                     target="_blank"
                   >
                     <div
-                      className="MuiCardMedia-root makeStyles-cardMedia-47"
+                      className="MuiCardMedia-root makeStyles-cardMedia-26"
                       style={
                         Object {
-                          "backgroundImage": "url(\\"https://pics.dmm.co.jp/digital/video/mide00897/mide00897ps.jpg\\")",
+                          "backgroundImage": "url(\\"https://dummyimage.com/147x200/000/fff\\")",
                         }
                       }
                       title="家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ"
                     />
                     <div
-                      className="MuiCardContent-root makeStyles-cardContent-48"
+                      className="MuiCardContent-root makeStyles-cardContent-27"
                     >
                       <h2
-                        className="MuiTypography-root makeStyles-cardTitle-49 MuiTypography-caption MuiTypography-gutterBottom"
+                        className="MuiTypography-root makeStyles-cardTitle-28 MuiTypography-caption MuiTypography-gutterBottom"
                       >
                         家、いきなり行ってイイですか？ M男クンのお宅へ突撃デリバリーSEX！！ 小悪魔200％でイジメちゃうぞ！！ 七沢みあ
                       </h2>
@@ -1763,7 +2289,8 @@ Array [
                         className="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary"
                       >
                         <span
-                          className="MuiBox-root MuiBox-root-59"
+                          className="MuiBox-root MuiBox-root-38"
+                          data-testid="item-list-item-price"
                         >
                           1,980円~
                         </span>
@@ -1782,7 +2309,141 @@ Array [
           </div>
         </div>
       </div>
+      <div
+        className="MuiBox-root MuiBox-root-39"
+      >
+        <nav
+          aria-label="pagination navigation"
+          className="MuiPagination-root"
+          data-testid="pagination"
+        >
+          <ul
+            className="MuiPagination-ul"
+          >
+            <li>
+              <button
+                aria-label="Go to previous page"
+                className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled Mui-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                aria-current="true"
+                aria-label="page 1"
+                className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                1
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </li>
+            <li>
+              <button
+                aria-label="Go to page 2"
+                className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                2
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </li>
+            <li>
+              <button
+                aria-label="Go to next page"
+                className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page MuiPaginationItem-outlined MuiPaginationItem-rounded"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </main>,
-]
+  </main>
+</div>
 `;

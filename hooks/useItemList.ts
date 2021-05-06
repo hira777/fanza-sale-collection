@@ -1,57 +1,54 @@
 import { useState, useEffect, useRef } from 'react';
-import { useDebounce } from 'react-use';
-import { ItemListResponseResultField } from '../types/api/';
+
+import { ItemListResponseResult } from '../types/api/';
 import { itemListService } from '../services/itemList';
 
 type UseItems = {
-  response: ItemListResponseResultField;
+  response: ItemListResponseResult;
   category: string;
+  offset?: number;
 };
 
-export type ItemListResponse = {
-  resultCount: ItemListResponseResultField['result_count'];
-  totalCount: ItemListResponseResultField['total_count'];
-  firstPosition: ItemListResponseResultField['first_position'];
-  items: ItemListResponseResultField['items'];
-};
-
-export function useItemList({ response: initialResponse, category: initialCategory }: UseItems) {
-  const [response, setResponse] = useState<ItemListResponse>({
-    resultCount: initialResponse.result_count,
-    totalCount: initialResponse.total_count,
-    firstPosition: initialResponse.first_position,
-    items: initialResponse.items,
-  });
+export function useItemList({
+  response: initialResponse,
+  category: initialCategory,
+  offset: initialOffset = 1,
+}: UseItems) {
+  const [response, setResponse] = useState(initialResponse);
   const [category, setCategory] = useState(initialCategory);
   const [inputValue, setInputValue] = useState('');
-  const keyword = useRef(`${category} ${inputValue}`);
+  const [offset, setOffset] = useState(initialOffset);
+  const keyword = useRef(category);
+  const offsetRef = useRef(offset);
   const search = () => {
-    const newKeyword = `${category} ${inputValue}`;
+    const newKeyword = inputValue ? `${category} ${inputValue}` : category;
 
-    if (keyword.current === newKeyword) {
+    if (keyword.current === newKeyword && offsetRef.current === offset) {
       return;
     }
 
-    keyword.current = newKeyword;
+    if (keyword.current !== newKeyword) {
+      keyword.current = newKeyword;
+      offsetRef.current = 1;
+      setOffset(1);
+    } else if (offsetRef.current !== offset) {
+      offsetRef.current = offset;
+    }
 
     const fetchData = async () => {
       const { data } = await itemListService.get({
         keyword: keyword.current,
+        offset: offsetRef.current,
       });
-      setResponse({
-        ...response,
-        items: data.items,
-        resultCount: data.result_count,
-        totalCount: data.total_count,
-        firstPosition: data.first_position,
-      });
+      setResponse(data);
     };
 
     fetchData();
   };
 
-  useDebounce(search, 500, [inputValue]);
+  useEffect(search, [inputValue]);
   useEffect(search, [category]);
+  useEffect(search, [offset]);
 
-  return { response, keyword: keyword.current, setCategory, setInputValue };
+  return { response, keyword: keyword.current, setCategory, setInputValue, setOffset };
 }

@@ -21,9 +21,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Dmimk00078%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/mimk00078/mimk00078pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/mimk00078/mimk00078ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/mimk00078/mimk00078pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -42,14 +42,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mimk00078/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -79,9 +75,7 @@ export const getItems = (): ItemInfo[] => {
           { id: 4138, name: '原作コラボ' },
         ],
         maker: [{ id: 1509, name: 'ムーディーズ' }],
-        director: [
-          { id: 101129, name: 'ドラゴン西川', ruby: 'どらごんにしかわ' },
-        ],
+        director: [{ id: 101129, name: 'ドラゴン西川', ruby: 'どらごんにしかわ' }],
         label: [{ id: 23281, name: 'まんきつ' }],
       },
       campaign: [
@@ -111,12 +105,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3D118ppt00092%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list:
-          'https://pics.dmm.co.jp/digital/video/118ppt00092/118ppt00092pt.jpg',
-        small:
-          'https://pics.dmm.co.jp/digital/video/118ppt00092/118ppt00092ps.jpg',
-        large:
-          'https://pics.dmm.co.jp/digital/video/118ppt00092/118ppt00092pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -137,14 +128,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=118ppt00092/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -198,9 +185,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Debod00806%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/ebod00806/ebod00806pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/ebod00806/ebod00806ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/ebod00806/ebod00806pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -219,14 +206,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ebod00806/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -257,9 +240,7 @@ export const getItems = (): ItemInfo[] => {
         ],
         maker: [{ id: 5032, name: 'E-BODY' }],
         actress: [{ id: 1067267, name: '楪カレン', ruby: 'ゆずりはかれん' }],
-        director: [
-          { id: 108088, name: 'トレンディ山口', ruby: 'とれんでぃやまぐち' },
-        ],
+        director: [{ id: 108088, name: 'トレンディ山口', ruby: 'とれんでぃやまぐち' }],
         label: [{ id: 7898, name: 'E-BODY' }],
       },
     },
@@ -282,12 +263,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3D13dsvr00942%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list:
-          'https://pics.dmm.co.jp/digital/video/13dsvr00942/13dsvr00942pt.jpg',
-        small:
-          'https://pics.dmm.co.jp/digital/video/13dsvr00942/13dsvr00942ps.jpg',
-        large:
-          'https://pics.dmm.co.jp/digital/video/13dsvr00942/13dsvr00942pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -340,9 +318,7 @@ export const getItems = (): ItemInfo[] => {
         series: [{ id: 4061210, name: '地面特化VR' }],
         maker: [{ id: 45276, name: 'SODクリエイト' }],
         actress: [{ id: 1042929, name: '小倉由菜', ruby: 'おぐらゆな' }],
-        director: [
-          { id: 115182, name: '矢澤レシーブ', ruby: 'やざわれしーぶ' },
-        ],
+        director: [{ id: 115182, name: '矢澤レシーブ', ruby: 'やざわれしーぶ' }],
         label: [{ id: 25739, name: 'SODVR' }],
       },
     },
@@ -364,9 +340,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Dipx00628%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/ipx00628/ipx00628pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/ipx00628/ipx00628ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/ipx00628/ipx00628pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -387,14 +363,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=ipx00628/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -447,9 +419,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Didbd00754%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/idbd00754/idbd00754pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/idbd00754/idbd00754ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/idbd00754/idbd00754pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -515,19 +487,15 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Dbf00610%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/bf00610/bf00610pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/bf00610/bf00610ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/bf00610/bf00610pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=bf00610/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -583,9 +551,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Dmide00900%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/mide00900/mide00900pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/mide00900/mide00900ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/mide00900/mide00900pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -604,14 +572,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00900/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -640,14 +604,10 @@ export const getItems = (): ItemInfo[] => {
           { id: 6004, name: 'デジモ' },
           { id: 1027, name: '美少女' },
         ],
-        series: [
-          { id: 4002063, name: '禁欲焦らしオーガズム覚醒スペシャル！！' },
-        ],
+        series: [{ id: 4002063, name: '禁欲焦らしオーガズム覚醒スペシャル！！' }],
         maker: [{ id: 1509, name: 'ムーディーズ' }],
         actress: [{ id: 1061063, name: '石原希望', ruby: 'いしはらのぞみ' }],
-        director: [
-          { id: 102947, name: '嵐山みちる', ruby: 'あらしやまみちる' },
-        ],
+        director: [{ id: 102947, name: '嵐山みちる', ruby: 'あらしやまみちる' }],
         label: [{ id: 4325, name: 'MOODYZ DIVA' }],
       },
     },
@@ -659,8 +619,7 @@ export const getItems = (): ItemInfo[] => {
       category_name: 'ビデオ (動画)',
       content_id: 'ofje00236',
       product_id: 'ofje00236',
-      title:
-        '三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル',
+      title: '三上悠亜3周年メモリアルベスト最新全12タイトル65コーナー480分スペシャル',
       volume: '477',
       review: { count: 10, average: '4.30' },
       URL: 'https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=ofje00236/',
@@ -670,9 +629,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Dofje00236%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/ofje00236/ofje00236pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/ofje00236/ofje00236ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/ofje00236/ofje00236pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -691,14 +650,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=9ofje236/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },
@@ -752,9 +707,9 @@ export const getItems = (): ItemInfo[] => {
       affiliateURLsp:
         'https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdigital%2Fvideoa%2F-%2Fdetail%2F%3D%2Fcid%3Dmide00897%2F&af_id=hira777-990&ch=api',
       imageURL: {
-        list: 'https://pics.dmm.co.jp/digital/video/mide00897/mide00897pt.jpg',
-        small: 'https://pics.dmm.co.jp/digital/video/mide00897/mide00897ps.jpg',
-        large: 'https://pics.dmm.co.jp/digital/video/mide00897/mide00897pl.jpg',
+        list: 'https://dummyimage.com/90x122/000/fff',
+        small: 'https://dummyimage.com/147x200/000/fff',
+        large: 'https://dummyimage.com/800x500/000/fff',
       },
       sampleImageURL: {
         sample_s: {
@@ -775,14 +730,10 @@ export const getItems = (): ItemInfo[] => {
         },
       },
       sampleMovieURL: {
-        size_476_306:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=476_306/',
-        size_560_360:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=560_360/',
-        size_644_414:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=644_414/',
-        size_720_480:
-          'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=720_480/',
+        size_476_306: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=476_306/',
+        size_560_360: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=560_360/',
+        size_644_414: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=644_414/',
+        size_720_480: 'https://www.dmm.co.jp/litevideo/-/part/=/cid=mide00897/size=720_480/',
         pc_flag: 1,
         sp_flag: 1,
       },

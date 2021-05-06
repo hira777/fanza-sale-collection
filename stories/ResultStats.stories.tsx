@@ -8,15 +8,16 @@ export default {
   component: ResultStats,
 } as Meta;
 
-const Template: Story<ResultStatsProps> = args => <ResultStats {...args} />;
+const Template: Story<ResultStatsProps> = (args) => <ResultStats {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
   keyword: '期間限定セール',
   response: {
-    resultCount: 100,
-    totalCount: 1000,
-    firstPosition: 1,
+    status: 200,
+    result_count: 100,
+    total_count: 1000,
+    first_position: 1,
     items: [],
   },
 };

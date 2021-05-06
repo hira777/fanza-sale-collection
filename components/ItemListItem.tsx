@@ -43,7 +43,7 @@ function formatWithComma(number: number): string {
   return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
 }
 
-function formatPrice(price: ItemInfo['prices']['price']) {
+export function formatPrice(price: ItemInfo['prices']['price']) {
   const newPrice = parseInt(price.replace('~', ''), 0);
   return `${formatWithComma(newPrice)}円~`;
 }
@@ -57,13 +57,8 @@ export function ItemListItem({ item }: ItemListItemProps) {
   const price = formatPrice(item.prices.price);
 
   return (
-    <Grid item className={classes.gridItem}>
-      <Card
-        className={classes.CardRoot}
-        square
-        variant="outlined"
-        elevation={0}
-      >
+    <Grid item className={classes.gridItem} data-testid="item-list-item">
+      <Card className={classes.CardRoot} square variant="outlined" elevation={0}>
         <CardActionArea>
           <Link
             href={item.URL}
@@ -87,7 +82,7 @@ export function ItemListItem({ item }: ItemListItemProps) {
                 {item.title}
               </Typography>
               <Typography variant="caption" color="secondary" component="p">
-                <Box component="span" fontWeight="bold">
+                <Box component="span" fontWeight="bold" data-testid="item-list-item-price">
                   {price}
                 </Box>
               </Typography>

@@ -1,91 +1,97 @@
 import { renderHook, act } from '@testing-library/react-hooks';
+import { rest } from 'msw';
+import { setupServer } from 'msw/node';
 
-import { getItems } from '../mock/items';
-import { getCategories } from '../mock/categories';
 import { itemListService } from '../services/itemList';
 import { useItemList } from './useItemList';
 
-function getResponse(items) {
-  return {
-    data: {
-      status: 200,
-      result_count: 100,
-      total_count: 100,
-      first_position: 1,
-      items,
-    },
-    status: 200,
-    statusText: 'OK',
-    headers: {},
-    config: {},
-  };
-}
+const server = setupServer(
+  ...[
+    rest.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}api/ItemList`, (req, res, ctx) => {
+      return res(ctx.status(200), ctx.json({ id: 1 }));
+    }),
+  ]
+);
 
-jest.mock('../services/itemList');
-const modkedItemListService = itemListService as jest.Mocked<typeof itemListService>;
+// すべてのテストの前に、APIのモッキングを確立する。
+beforeAll(() => server.listen());
+
+// テスト中に追加したリクエストハンドラをリセットして、他のテストに影響を与えないようにする。
+afterEach(() => server.resetHandlers());
+
+// クリーンアップ
+afterAll(() => server.close());
+
 describe('useItemList', () => {
-  const items = getItems();
-  const categories = getCategories();
-  const initialResponseData = {
+  const initialResponse = {
     status: 200,
     result_count: 0,
     total_count: 0,
     first_position: 1,
     items: [],
   };
-  const response = getResponse(items);
-  const spyItemListService = jest.spyOn(itemListService, 'get');
-  modkedItemListService.get.mockResolvedValue(response);
+  const initialCategory = '期間限定セール';
+  const spyItemListServiceGet = jest.spyOn(itemListService, 'get');
 
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  test('レスポンスの初期値を返す', async () => {
+  test('受け取った引数に応じた正しい初期値を返す', async () => {
     const { result } = renderHook(() =>
-      useItemList({
-        response: initialResponseData,
-        category: categories[0],
-      })
+      useItemList({ response: initialResponse, category: initialCategory })
     );
 
-    expect(spyItemListService).toHaveBeenCalledTimes(0);
-    expect(result.current.response.items).toEqual(initialResponseData.items);
-    expect(result.current.response.resultCount).toBe(initialResponseData.result_count);
-    expect(result.current.response.totalCount).toBe(initialResponseData.total_count);
-    expect(result.current.response.firstPosition).toBe(initialResponseData.first_position);
-    expect(result.current.keyword).toBe(`${categories[0]} `);
+    expect(spyItemListServiceGet).toHaveBeenCalledTimes(0);
+    expect(result.current.response).toEqual(initialResponse);
+    expect(result.current.keyword).toBe(initialCategory);
   });
 
-  test('カテゴリを変更すると、API にリクエストしてレスポンスを返す', async () => {
+  test('カテゴリを変更すると、itemListServiceをコールしてデータを取得する', async () => {
+    const { result, waitForNextUpdate } = renderHook(() =>
+      useItemList({ response: initialResponse, category: initialCategory })
+    );
+
+    act(() => {
+      result.current.setCategory('ブランドストア30％OFF');
+    });
+
+    await waitForNextUpdate({});
+    expect(spyItemListServiceGet).toHaveBeenCalledTimes(1);
+    expect(spyItemListServiceGet).toHaveBeenCalledWith({
+      keyword: 'ブランドストア30％OFF',
+      offset: 1,
+    });
+    expect(result.current.response).toEqual({ id: 1 });
+    expect(result.current.keyword).toBe('ブランドストア30％OFF');
+  });
+
+  test('検索開始位置が2以上の状態でカテゴリを変更すると、検索開始位置を1にしてitemListServiceをコールする', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
       useItemList({
-        response: initialResponseData,
-        category: categories[0],
+        response: initialResponse,
+        category: initialCategory,
+        offset: 101,
       })
     );
 
     act(() => {
-      result.current.setCategory(categories[1]);
+      result.current.setCategory('ブランドストア30％OFF');
     });
 
     await waitForNextUpdate({});
-    expect(spyItemListService).toHaveBeenCalledTimes(1);
-    expect(spyItemListService).toHaveBeenCalledWith({
-      keyword: `${categories[1]} `,
+    expect(spyItemListServiceGet).toHaveBeenCalledTimes(1);
+    expect(spyItemListServiceGet).toHaveBeenCalledWith({
+      keyword: 'ブランドストア30％OFF',
+      offset: 1,
     });
-    expect(result.current.response.items).toEqual(response.data.items);
-    expect(result.current.response.resultCount).toBe(response.data.result_count);
-    expect(result.current.response.totalCount).toBe(response.data.total_count);
-    expect(result.current.response.firstPosition).toBe(response.data.first_position);
-    expect(result.current.keyword).toBe(`${categories[1]} `);
   });
 
-  test('入力値を変更してから500ms後、API にリクエストしてレスポンスを返す', async () => {
+  test('入力値を変更すると、itemListServiceをコールしてデータを取得する', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
       useItemList({
-        response: initialResponseData,
-        category: categories[0],
+        response: initialResponse,
+        category: initialCategory,
       })
     );
 
@@ -94,22 +100,21 @@ describe('useItemList', () => {
     });
 
     await waitForNextUpdate();
-    expect(spyItemListService).toHaveBeenCalledTimes(1);
-    expect(spyItemListService).toHaveBeenCalledWith({
-      keyword: `${categories[0]} AAA`,
+    expect(spyItemListServiceGet).toHaveBeenCalledTimes(1);
+    expect(spyItemListServiceGet).toHaveBeenCalledWith({
+      keyword: `${initialCategory} AAA`,
+      offset: 1,
     });
-    expect(result.current.response.items).toEqual(response.data.items);
-    expect(result.current.response.resultCount).toBe(response.data.result_count);
-    expect(result.current.response.totalCount).toBe(response.data.total_count);
-    expect(result.current.response.firstPosition).toBe(response.data.first_position);
-    expect(result.current.keyword).toBe(`${categories[0]} AAA`);
+    expect(result.current.response).toEqual({ id: 1 });
+    expect(result.current.keyword).toBe(`${initialCategory} AAA`);
   });
 
-  test('入力値を変更してから500ms以内だと、まだ API にリクエストしていない', async () => {
-    const { result } = renderHook(() =>
+  test('検索開始位置が2以上の状態で入力値を変更すると、検索開始位置を1にしてitemListServiceをコールする', async () => {
+    const { result, waitForNextUpdate } = renderHook(() =>
       useItemList({
-        response: initialResponseData,
-        category: categories[0],
+        response: initialResponse,
+        category: initialCategory,
+        offset: 101,
       })
     );
 
@@ -117,6 +122,33 @@ describe('useItemList', () => {
       result.current.setInputValue('AAA');
     });
 
-    expect(spyItemListService).toHaveBeenCalledTimes(0);
+    await waitForNextUpdate({});
+    expect(spyItemListServiceGet).toHaveBeenCalledTimes(1);
+    expect(spyItemListServiceGet).toHaveBeenCalledWith({
+      keyword: `${initialCategory} AAA`,
+      offset: 1,
+    });
+  });
+
+  test('検索開始位置を変更すると、itemListServiceをコールしてデータを取得する', async () => {
+    const { result, waitForNextUpdate } = renderHook(() =>
+      useItemList({
+        response: initialResponse,
+        category: initialCategory,
+      })
+    );
+
+    act(() => {
+      result.current.setOffset(100);
+    });
+
+    await waitForNextUpdate();
+    expect(spyItemListServiceGet).toHaveBeenCalledTimes(1);
+    expect(spyItemListServiceGet).toHaveBeenCalledWith({
+      keyword: initialCategory,
+      offset: 100,
+    });
+    expect(result.current.response).toEqual({ id: 1 });
+    expect(result.current.keyword).toBe(initialCategory);
   });
 });
