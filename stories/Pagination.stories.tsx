@@ -21,3 +21,9 @@ WithTwoPage.args = {
   page: 2,
   count: 5,
 };
+
+export const OnlyOnePage = Template.bind({});
+WithTwoPage.args = {
+  page: 1,
+  count: 1,
+};
