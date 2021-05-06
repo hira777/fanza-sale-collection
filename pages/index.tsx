@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import Box from '@material-ui/core/Box';
@@ -9,7 +8,6 @@ import { ItemListResponseResult } from '../types/api/';
 import { useItemList } from '../hooks/useItemList';
 import { Header } from '../components/Header';
 import { ItemList } from '../components/ItemList';
-import { ItemListItem } from '../components/ItemListItem';
 import { Pagination } from '../components/Pagination';
 import { ResultStats } from '../components/ResultStats';
 import { CATEGORIES } from '../constants/categoriesOfSearch';
@@ -33,16 +31,6 @@ export default function Home({ initialResponse }: HomeProps) {
   const onChange = (offset: number) => {
     setOffset(offset * pageSize - pageSize + 1);
   };
-  const itemList = useMemo(
-    () => (
-      <ItemList>
-        {response.items.map((item) => (
-          <ItemListItem key={item.product_id} item={item} />
-        ))}
-      </ItemList>
-    ),
-    [response.items]
-  );
 
   return (
     <div>
@@ -54,7 +42,9 @@ export default function Home({ initialResponse }: HomeProps) {
       <main style={{ marginTop: 20 }}>
         <Container fixed maxWidth="md">
           <ResultStats keyword={keyword} response={response} />
-          <div style={{ marginTop: 10 }}>{itemList}</div>
+          <div style={{ marginTop: 10 }}>
+            <ItemList items={initialResponse.items} />
+          </div>
           <Box display="flex" justifyContent="center" mt={3} mb={3}>
             <Pagination
               page={response.first_position}
