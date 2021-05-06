@@ -15,14 +15,13 @@ export function Pagination({ page: initialPage, count, onChange: onChangePage }:
   };
 
   return (
-    <div>
-      <MaterialPagination
-        variant="outlined"
-        shape="rounded"
-        count={count}
-        page={page}
-        onChange={onChange}
-      />
-    </div>
+    <MaterialPagination
+      variant="outlined"
+      shape="rounded"
+      count={count}
+      page={page}
+      onChange={onChange}
+      data-testid="pagination"
+    />
   );
 }
