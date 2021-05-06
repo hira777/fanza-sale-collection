@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# fanza-sale-collection
 
-## Getting Started
+FANZA のセール品を検索できるサービス
 
-First, run the development server:
+## Motivation
 
-```bash
-npm run dev
-# or
-yarn dev
+FANZA のセール品の検索がし辛いので、本家よりも検索がしやすいサービスを作った。
+
+## Setup
+
+アプリケーションを動作させるためには、`.env.local`を作成し、以下の情報を記述する必要がある。
+
+```
+API_ID=[DMM API の API ID]
+AFFILIATE_ID=[DMM API の アフィリエイト ID]
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/
+NEXT_PUBLIC_SALE_CATEGORIES=[現在セール中のカテゴリ]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+以下は入力例。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+API_ID=AAA
+AFFILIATE_ID=BBB
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/
+NEXT_PUBLIC_SALE_CATEGORIES=期間限定セール,SODクリエイト30%OFF
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+そして、以下のコマンドを実行すればアプリケーションが動作する。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run dev
+```

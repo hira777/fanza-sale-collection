@@ -1,65 +1,71 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { GetServerSideProps } from 'next';
+import Head from 'next/head';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 
-export default function Home() {
+import { itemListService } from '../services/itemList';
+import { ItemListResponseResult } from '../types/api/';
+import { useItemList } from '../hooks/useItemList';
+import { Header } from '../components/Header';
+import { ItemList } from '../components/ItemList';
+import { Pagination } from '../components/Pagination';
+import { ResultStats } from '../components/ResultStats';
+import { CATEGORIES } from '../constants/categoriesOfSearch';
+
+export type HomeProps = {
+  initialResponse: ItemListResponseResult;
+};
+
+export default function Home({ initialResponse }: HomeProps) {
+  const { response, keyword, setCategory, setInputValue, setOffset } = useItemList({
+    response: initialResponse,
+    category: CATEGORIES[0],
+  });
+  const pageSize = 100;
+  const onSubmit = (value: string) => {
+    setInputValue(value);
+  };
+  const onChangeCategory = (selectedCategory: string) => {
+    setCategory(selectedCategory);
+  };
+  const onChange = (offset: number) => {
+    setOffset(offset * pageSize - pageSize + 1);
+  };
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Fanza Sale Collection</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <Header categories={CATEGORIES} onChangeCategory={onChangeCategory} onSubmit={onSubmit} />
+      <main style={{ marginTop: 20 }}>
+        <Container fixed maxWidth="md">
+          <ResultStats keyword={keyword} response={response} />
+          <div style={{ marginTop: 10 }}>
+            <ItemList items={initialResponse.items} />
+          </div>
+          <Box display="flex" justifyContent="center" mt={3} mb={3}>
+            <Pagination
+              page={response.first_position}
+              count={Math.floor(response.total_count / pageSize) + 1}
+              onChange={onChange}
+            />
+          </Box>
+        </Container>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const { data } = await itemListService.get({
+    keyword: CATEGORIES[0],
+  });
+
+  return {
+    props: {
+      initialResponse: data,
+    },
+  };
+};
