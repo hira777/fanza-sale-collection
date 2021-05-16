@@ -43,7 +43,7 @@ export default function Home({ initialResponse }: HomeProps) {
         <Container fixed maxWidth="md">
           <ResultStats keyword={keyword} response={response} />
           <div style={{ marginTop: 10 }}>
-            <ItemList items={initialResponse.items} />
+            <ItemList items={response.items} />
           </div>
           <Box display="flex" justifyContent="center" mt={3} mb={3}>
             <Pagination
