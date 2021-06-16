@@ -5,7 +5,7 @@ import { ItemList, ItemListProps } from './index';
 import { getItems } from '../../mocks/items';
 
 export default {
-  title: 'Components-Tailwind/ItemList',
+  title: 'Components/ItemList',
   component: ItemList,
 } as Meta;
 

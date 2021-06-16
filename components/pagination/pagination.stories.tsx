@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { Pagination, PaginationProps } from './index';
 
 export default {
-  title: 'Components-Tailwind/Pagination',
+  title: 'Components/Pagination',
   component: Pagination,
 } as Meta;
 

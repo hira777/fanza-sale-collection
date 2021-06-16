@@ -5,7 +5,7 @@ import { Header, HeaderProps } from './index';
 import { getCategories } from '../../mocks/categories';
 
 export default {
-  title: 'Components-Tailwind/Header',
+  title: 'Components/Header',
   component: Header,
 } as Meta;
 

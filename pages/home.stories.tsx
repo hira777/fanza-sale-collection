@@ -5,7 +5,7 @@ import Home, { HomeProps } from './';
 import { getItems } from '../mocks/items';
 
 export default {
-  title: 'Pages-Tailwind/Home',
+  title: 'Pages/Home',
   component: Home,
 } as Meta;
 
