@@ -16,7 +16,7 @@ describe('ItemListItem', () => {
     render(<ItemListItem {...props} />);
     expect(screen.getByTestId('item-list-item')).toMatchInlineSnapshot(`
       <div
-        class="transition overflow-hidden w-2/6 md:w-160 -mt-px -ml-px border border-gray-200 hover:bg-gray-100"
+        class="transition p-1 md:p-0 w-2/6 md:w-147 md:-mt-px md:-ml-px md:border md:border-gray-200 md:hover:bg-gray-100"
         data-testid="item-list-item"
       >
         <a

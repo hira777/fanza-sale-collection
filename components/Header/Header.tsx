@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ChevronDownIcon, SearchIcon } from '@heroicons/react/solid';
 
-type FormData = {
+export type FormData = {
   category: string;
   keyword: string;
 };
@@ -32,10 +32,10 @@ export function Header({ onSubmit, options }: HeaderProps) {
 
   return (
     <header>
-      <div className="py-3 md:py-4 border-b bg-white">
-        <div className="max-w-screen-xl w-full m-auto md:flex md:items-center ">
-          <div className="pl-2 md:pl-8 mr-4 md:mr-8 mb-2 md:mb-0 text-xl">FANZA Sales</div>
-          <div className="pl-2 md:pl-0 pr-2 md:pr-8 flex-grow">
+      <div className="py-2 md:py-4 border-b bg-white">
+        <div className="max-w-screen-lg w-full m-auto md:flex md:items-center ">
+          <div className="pl-3 md:pl-0 mr-4 md:mr-8 mb-1 md:mb-0 text-xl">FANZA Sales</div>
+          <div className="pl-3 md:pl-0 pr-3 md:pr-0 flex-grow">
             <form className="flex" ref={formEl} onSubmit={handleSubmit}>
               <div className="relative w-3/6">
                 <select

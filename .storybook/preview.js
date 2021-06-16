@@ -7,4 +7,5 @@ export const parameters = {
       order: ['Pages', 'Components'],
     },
   },
+  layout: 'fullscreen',
 };

@@ -13,5 +13,5 @@ export function ItemList({ items }: ItemListProps) {
     [items]
   );
 
-  return <div className="flex flex-wrap w-full md:w-1280 m-auto">{itemList}</div>;
+  return <div className="flex flex-wrap w-full m-auto">{itemList}</div>;
 }

@@ -36,7 +36,7 @@ export function Pagination({ page: _page, count, pagerCount, onChange }: Paginat
   };
 
   return (
-    <div className="bg-white py-3 flex items-center justify-between" data-testid="pagination">
+    <div className="bg-white flex items-center justify-between" data-testid="pagination">
       <div className="flex-1 flex items-center justify-between">
         <div className={`${!prevMoreExists && 'invisible'}`}>
           <a
