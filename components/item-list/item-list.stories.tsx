@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { ItemList, ItemListProps } from './index';
+import { ItemList, ItemListProps } from './';
 import { getItems } from '../../mocks/items';
 
 export default {

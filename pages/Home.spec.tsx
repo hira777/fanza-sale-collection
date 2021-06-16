@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
 
-import { default as Home, HomeProps } from './index';
+import { default as Home, HomeProps } from './';
 import { getItems } from '../mocks/items';
 
 afterEach(cleanup);

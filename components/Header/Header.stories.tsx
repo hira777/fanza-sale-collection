@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { Header, HeaderProps } from './index';
+import { Header, HeaderProps } from './';
 import { getCategories } from '../../mocks/categories';
 
 export default {
