@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Home, { HomeProps } from '../pages/';
+import Home, { HomeProps } from './';
 import { getItems } from '../mocks/items';
 
 export default {
