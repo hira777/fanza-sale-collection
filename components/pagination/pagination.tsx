@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
+import { usePagination } from './usePagination';
+
 export type PaginationProps = {
   page: number;
   count: number;
@@ -83,46 +85,4 @@ export function Pagination({ page: _page, count, itemsShown = 5, onChange }: Pag
       </div>
     </div>
   );
-}
-
-type UsePaginationProps = {
-  // 現在のページ番号
-  page: number;
-  // 合計ページ数
-  pageCount: number;
-  // 表示するボタンの数
-  itemsShown?: 3 | 5 | 7;
-};
-
-function usePagination({ page: pageProp, pageCount, itemsShown = 5 }: UsePaginationProps) {
-  const [page, setPage] = React.useState(pageProp);
-  const prevMoreExists = page > 1;
-  const nextMoreExists = pageCount > page;
-  const range = (start, end) => {
-    const length = end - start + 1;
-    return Array.from({ length }, (_, i) => start + i);
-  };
-  let paginationNumbers = [];
-
-  if (prevMoreExists && !nextMoreExists) {
-    const startPage = pageCount > itemsShown ? pageCount - itemsShown + 1 : 1;
-    paginationNumbers = range(startPage, pageCount);
-  } else if (!prevMoreExists && nextMoreExists) {
-    const maxCount = itemsShown > pageCount ? pageCount : itemsShown;
-    paginationNumbers = range(1, maxCount);
-  } else if (prevMoreExists && nextMoreExists) {
-    const offset = Math.floor(itemsShown / 2);
-    const start = page - offset;
-    const belowCount = start <= 0 ? -start + 1 : 0;
-    const end = page + offset + belowCount;
-    const overCount = pageCount - end < 0 ? -(pageCount - end) : 0;
-    const startPage = start - overCount > 0 ? start - overCount : 1;
-    const endPage = overCount > 0 ? end - overCount : end;
-
-    paginationNumbers = range(startPage, endPage);
-  } else {
-    paginationNumbers = range(1, pageCount);
-  }
-
-  return { paginationNumbers, page, setPage, prevMoreExists, nextMoreExists };
 }
