@@ -14,19 +14,19 @@ export const Default = Template.bind({});
 Default.args = {
   page: 3,
   count: 10,
-  pagerCount: 5,
+  itemsShown: 5,
 };
 
 export const WithTwoPage = Template.bind({});
 WithTwoPage.args = {
   page: 1,
   count: 2,
-  pagerCount: 5,
+  itemsShown: 5,
 };
 
 export const OnlyOnePage = Template.bind({});
 OnlyOnePage.args = {
   page: 1,
   count: 1,
-  pagerCount: 5,
+  itemsShown: 5,
 };

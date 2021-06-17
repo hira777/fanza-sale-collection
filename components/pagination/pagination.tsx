@@ -4,15 +4,15 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 export type PaginationProps = {
   page: number;
   count: number;
-  pagerCount: 3 | 5 | 7;
+  itemsShown?: 3 | 5 | 7;
   onChange: (value: number) => void;
 };
 
-export function Pagination({ page: _page, count, pagerCount, onChange }: PaginationProps) {
+export function Pagination({ page: _page, count, itemsShown = 5, onChange }: PaginationProps) {
   const { paginationNumbers, page, setPage, prevMoreExists, nextMoreExists } = usePagination({
     page: _page,
     pageCount: count,
-    pagerCount,
+    itemsShown,
   });
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>, paginationNumber: number) => {
     event.preventDefault();
@@ -91,10 +91,10 @@ type UsePaginationProps = {
   // 合計ページ数
   pageCount: number;
   // 表示するボタンの数
-  pagerCount?: 3 | 5 | 7;
+  itemsShown?: 3 | 5 | 7;
 };
 
-function usePagination({ page: pageProp, pageCount, pagerCount = 5 }: UsePaginationProps) {
+function usePagination({ page: pageProp, pageCount, itemsShown = 5 }: UsePaginationProps) {
   const [page, setPage] = React.useState(pageProp);
   const prevMoreExists = page > 1;
   const nextMoreExists = pageCount > page;
@@ -105,13 +105,13 @@ function usePagination({ page: pageProp, pageCount, pagerCount = 5 }: UsePaginat
   let paginationNumbers = [];
 
   if (prevMoreExists && !nextMoreExists) {
-    const startPage = pageCount > pagerCount ? pageCount - pagerCount + 1 : 1;
+    const startPage = pageCount > itemsShown ? pageCount - itemsShown + 1 : 1;
     paginationNumbers = range(startPage, pageCount);
   } else if (!prevMoreExists && nextMoreExists) {
-    const maxCount = pagerCount > pageCount ? pageCount : pagerCount;
+    const maxCount = itemsShown > pageCount ? pageCount : itemsShown;
     paginationNumbers = range(1, maxCount);
   } else if (prevMoreExists && nextMoreExists) {
-    const offset = Math.floor(pagerCount / 2);
+    const offset = Math.floor(itemsShown / 2);
     const start = page - offset;
     const belowCount = start <= 0 ? -start + 1 : 0;
     const end = page + offset + belowCount;

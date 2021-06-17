@@ -9,20 +9,20 @@ describe('Pagination', () => {
     const props: PaginationProps = {
       page: 1,
       count: 10,
-      pagerCount: 5,
+      itemsShown: 5,
       onChange: () => {},
     };
     render(<Pagination {...props} />);
 
     expect(screen.getByTestId('pagination')).toBeInTheDocument();
-    expect(screen.getAllByTestId('pagination-number').length).toBe(props.pagerCount);
+    expect(screen.getAllByTestId('pagination-number').length).toBe(props.itemsShown);
   });
 
   test('指定したページ番号に aria-current が付与される', () => {
     const props: PaginationProps = {
       page: 3,
       count: 5,
-      pagerCount: 5,
+      itemsShown: 5,
       onChange: () => {},
     };
     render(<Pagination {...props} />);
@@ -34,7 +34,7 @@ describe('Pagination', () => {
     const props: PaginationProps = {
       page: 1,
       count: 10,
-      pagerCount: 5,
+      itemsShown: 5,
       onChange: jest.fn(),
     };
     render(<Pagination {...props} />);
@@ -48,7 +48,7 @@ describe('Pagination', () => {
     const props: PaginationProps = {
       page: 1,
       count: 4,
-      pagerCount: 5,
+      itemsShown: 5,
       onChange: () => {},
     };
     render(<Pagination {...props} />);
@@ -76,7 +76,7 @@ describe('Pagination', () => {
     const props: PaginationProps = {
       page: 1,
       count: 6,
-      pagerCount: 7,
+      itemsShown: 7,
       onChange: () => {},
     };
     render(<Pagination {...props} />);
@@ -108,7 +108,7 @@ describe('Pagination', () => {
     const props: PaginationProps = {
       page: 1,
       count: 7,
-      pagerCount: 7,
+      itemsShown: 7,
       onChange: () => {},
     };
     render(<Pagination {...props} />);
@@ -142,7 +142,7 @@ describe('Pagination', () => {
     const props: PaginationProps = {
       page: 1,
       count: 4,
-      pagerCount: 3,
+      itemsShown: 3,
       onChange: () => {},
     };
     render(<Pagination {...props} />);
