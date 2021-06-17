@@ -3,6 +3,19 @@ import { renderHook, act } from '@testing-library/react-hooks';
 import { usePagination } from './usePagination';
 
 describe('usePagination', () => {
+  test('page Props を更新する度に usePagination 内の page が更新される', async () => {
+    const props = { page: 1, pageCount: 4, itemsShown: 3 as 3 };
+    const { result, rerender } = renderHook(() => usePagination(props));
+    expect(result.current.page).toBe(1);
+    act(() => {
+      result.current.setPage(2);
+    });
+    expect(result.current.page).toBe(2);
+    props.page = 5;
+    rerender();
+    expect(result.current.page).toBe(5);
+  });
+
   describe('表示するボタンの数が3つの時に正常に動作する', () => {
     test('合計ページ数が表示するボタンの数より多い時にページ番号を変更しても正常に動作する', async () => {
       const props = { page: 1, pageCount: 4, itemsShown: 3 } as const;

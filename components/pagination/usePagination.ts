@@ -15,10 +15,14 @@ const range = (start, end) => {
 };
 
 export function usePagination({ page: pageProp, pageCount, itemsShown }: UsePaginationProps) {
-  const [page, setPage] = React.useState(pageProp);
+  const [page, setPage] = React.useState(0);
   const prevMoreExists = page > 1;
   const nextMoreExists = pageCount > page;
   const paginationNumbers = getPaginationNumbers(page, pageCount, itemsShown);
+
+  React.useEffect(() => {
+    setPage(pageProp);
+  }, [pageProp]);
 
   return { paginationNumbers, page, setPage, prevMoreExists, nextMoreExists };
 }
