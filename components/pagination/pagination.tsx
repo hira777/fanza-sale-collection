@@ -4,12 +4,12 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 export type PaginationProps = {
   page: number;
   count: number;
-  pagerCount: number;
+  pagerCount: 3 | 5 | 7;
   onChange: (value: number) => void;
 };
 
 export function Pagination({ page: _page, count, pagerCount, onChange }: PaginationProps) {
-  const { paginationNumbers, page, setPage, prevMoreExists, nextMoreExists } = usePaging({
+  const { paginationNumbers, page, setPage, prevMoreExists, nextMoreExists } = usePagination({
     page: _page,
     pageCount: count,
     pagerCount,
@@ -85,52 +85,43 @@ export function Pagination({ page: _page, count, pagerCount, onChange }: Paginat
   );
 }
 
-function usePaging({
-  page: _page,
-  pageCount,
-  pagerCount = 5,
-}: {
+type UsePaginationProps = {
   // 現在のページ番号
   page: number;
-  // ページ数
+  // 合計ページ数
   pageCount: number;
   // 表示するボタンの数
-  pagerCount?: number;
-}) {
-  const [page, setPage] = React.useState(_page);
+  pagerCount?: 3 | 5 | 7;
+};
+
+function usePagination({ page: pageProp, pageCount, pagerCount = 5 }: UsePaginationProps) {
+  const [page, setPage] = React.useState(pageProp);
   const prevMoreExists = page > 1;
   const nextMoreExists = pageCount > page;
-  const paginationNumbers = [];
+  const range = (start, end) => {
+    const length = end - start + 1;
+    return Array.from({ length }, (_, i) => start + i);
+  };
+  let paginationNumbers = [];
 
   if (prevMoreExists && !nextMoreExists) {
     const startPage = pageCount > pagerCount ? pageCount - pagerCount + 1 : 1;
-    for (let paginationNumber = startPage; paginationNumber < pageCount + 1; paginationNumber++) {
-      paginationNumbers.push(paginationNumber);
-    }
+    paginationNumbers = range(startPage, pageCount);
   } else if (!prevMoreExists && nextMoreExists) {
     const maxCount = pagerCount > pageCount ? pageCount : pagerCount;
-    for (let paginationNumber = 1; paginationNumber < maxCount + 1; paginationNumber++) {
-      paginationNumbers.push(paginationNumber);
-    }
+    paginationNumbers = range(1, maxCount);
   } else if (prevMoreExists && nextMoreExists) {
     const offset = Math.floor(pagerCount / 2);
-    let startPage = page - offset;
-    let endPage = page + offset;
-    if (startPage === 0) {
-      startPage = 1;
-      endPage += 1;
-    } else if (endPage > pageCount) {
-      const overCount = endPage - pageCount;
-      startPage -= overCount;
-      endPage -= overCount;
-    }
-    for (let paginationNumber = startPage; paginationNumber <= endPage; paginationNumber++) {
-      paginationNumbers.push(paginationNumber);
-    }
+    const start = page - offset;
+    const belowCount = start <= 0 ? -start + 1 : 0;
+    const end = page + offset + belowCount;
+    const overCount = pageCount - end < 0 ? -(pageCount - end) : 0;
+    const startPage = start - overCount > 0 ? start - overCount : 1;
+    const endPage = overCount > 0 ? end - overCount : end;
+
+    paginationNumbers = range(startPage, endPage);
   } else {
-    for (let paginationNumber = 1; paginationNumber <= pageCount; paginationNumber++) {
-      paginationNumbers.push(paginationNumber);
-    }
+    paginationNumbers = range(1, pageCount);
   }
 
   return { paginationNumbers, page, setPage, prevMoreExists, nextMoreExists };
