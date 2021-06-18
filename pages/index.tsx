@@ -47,7 +47,7 @@ export default function Home({ initialResponse }: HomeProps) {
           <Pagination
             page={response.first_position}
             count={Math.floor(response.total_count / pageSize) + 1}
-            pagerCount={5}
+            itemsShown={5}
             onChange={onChange}
           />
         </div>
