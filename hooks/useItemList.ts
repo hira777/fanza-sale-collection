@@ -18,6 +18,7 @@ export function useItemList({
   const [category, setCategory] = useState(initialCategory);
   const [inputValue, setInputValue] = useState('');
   const [offset, setOffset] = useState(initialOffset);
+  const [isLoading, setIsLoading] = useState(false);
   const keyword = useRef(category);
   const offsetRef = useRef(offset);
   const search = () => {
@@ -36,11 +37,13 @@ export function useItemList({
     }
 
     const fetchData = async () => {
+      setIsLoading(true);
       const { data } = await itemListService.get({
         keyword: keyword.current,
         offset: offsetRef.current,
       });
       setResponse(data);
+      setIsLoading(false);
     };
 
     fetchData();
@@ -50,5 +53,5 @@ export function useItemList({
   useEffect(search, [category]);
   useEffect(search, [offset]);
 
-  return { response, keyword: keyword.current, setCategory, setInputValue, setOffset };
+  return { response, keyword: keyword.current, isLoading, setCategory, setInputValue, setOffset };
 }
