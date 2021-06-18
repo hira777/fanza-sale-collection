@@ -52,14 +52,16 @@ export default function Home({ initialResponse }: HomeProps) {
             <div className="mt-4">
               <ItemList items={response.items} />
             </div>
-            <div className="my-5 md:my-10">
-              <Pagination
-                page={Math.floor(response.first_position / pageSize) + 1}
-                count={Math.floor(response.total_count / pageSize) + 1}
-                itemsShown={5}
-                onChange={onChange}
-              />
-            </div>
+            {response.total_count > 0 && (
+              <div className="my-5 md:my-10">
+                <Pagination
+                  page={Math.floor(response.first_position / pageSize) + 1}
+                  count={Math.floor(response.total_count / pageSize) + 1}
+                  itemsShown={5}
+                  onChange={onChange}
+                />
+              </div>
+            )}
           </>
         )}
       </main>
