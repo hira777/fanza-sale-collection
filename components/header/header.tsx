@@ -31,7 +31,7 @@ export function Header({ onSubmit, options }: HeaderProps) {
   );
 
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <div className="py-2 md:py-4 border-b bg-white">
         <div className="max-w-screen-lg w-full m-auto md:flex md:items-center ">
           <div className="pl-3 md:pl-0 mr-4 md:mr-8 mb-1 md:mb-0 text-xl">FANZA Sales</div>
