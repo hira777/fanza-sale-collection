@@ -45,7 +45,7 @@ export default function Home({ initialResponse }: HomeProps) {
         </div>
         <div className="my-5 md:my-10">
           <Pagination
-            page={response.first_position}
+            page={Math.floor(response.first_position / pageSize) + 1}
             count={Math.floor(response.total_count / pageSize) + 1}
             itemsShown={5}
             onChange={onChange}
